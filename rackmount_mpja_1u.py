@@ -2,7 +2,7 @@ from __future__ import print_function
 from py2scad import *
 import expansion_pcb
 
-DEFAULT_PARAMS_FRONT =  {
+defaultParamsFront =  {
         'width'             :  19.0*INCH2MM,
         'height'            :  1.74*INCH2MM,
         'thickness'         :  0.1230*INCH2MM,
@@ -16,30 +16,24 @@ DEFAULT_PARAMS_FRONT =  {
         'shelfInset'       :  0.1635*INCH2MM,
         }
 
-DEFAULT_PARAMS_BOTTOM = {
+defaultParamsBottom = {
         'width'     : 16.5*INCH2MM,
         'height'    : 11.625*INCH2MM,
         'thickness' : 0.04*INCH2MM,
         }
 
-DEFAULT_PARAMS_BACK = {
+defaultParamsBack = {
         'width'     :  16.875*INCH2MM,
         'height'    :  1.46*INCH2MM,
         'thickness' :  0.08*INCH2MM,
         }
 
-DEFAULT_PARAMS_ENCLOSURE = {
-        'front'  : DEFAULT_PARAMS_FRONT,
-        'bottom' : DEFAULT_PARAMS_BOTTOM,
-        'back'   : DEFAULT_PARAMS_BACK,
+defaultParamsEnclosure = {
+        'front'  : defaultParamsFront,
+        'bottom' : defaultParamsBottom,
+        'back'   : defaultParamsBack,
         }
 
-DEFAULT_PARAMS_PANELS_ENCLOSURE = DEFAULT_PARAMS_ENCLOSURE
-PANELS_PARAMS_EXTRA = { 
-        'expansionPCB_PosX'   : 3.75*INCH2MM, 
-        'expansionPCB_PosY'   : 4.7*INCH2MM, 
-        }
-DEFAULT_PARAMS_PANELS_ENCLOSURE.update(PANELS_PARAMS_EXTRA)
 
 
 class Panel(object):
@@ -99,7 +93,7 @@ class Panel(object):
 
 class PanelFront(Panel):
 
-    def __init__(self, holeList = [], params=DEFAULT_PARAMS_FRONT):
+    def __init__(self, holeList = [], params=defaultParamsFront):
         super(PanelFront,self).__init__(holeList,params)
         self.makeShelves()
 
@@ -119,46 +113,47 @@ class PanelFront(Panel):
             self.part = Union([self.part,shelfTrans])
 
 
-    def addHoles(self):
-        # Add mount holes to hole list
-        holeType = 'rounded_square'
-        insetX, insetY = self.params['mountSlotInset']
-        size = (
-                self.params['mountSlotWidth'],
-                self.params['mountSlotHeight'],
-                self.params['mountSlotRadius'],
-                )
-        for i in (-1,1):
-            for j in (-1,1):
-                posX = i*(0.5*self.params['width'] - insetX)
-                posY = j*(0.5*self.params['height'] - insetY)
-                location = (posX,posY)
-                hole = {'type': holeType, 'size': size, 'location': location}
-                self.holeList.append(hole)
-        super(PanelFront,self).addHoles()
+    def addHoles(self, holeList=None):
+        if holeList is None:
+            # Add mount holes to hole list
+            holeType = 'rounded_square'
+            insetX, insetY = self.params['mountSlotInset']
+            size = (
+                    self.params['mountSlotWidth'],
+                    self.params['mountSlotHeight'],
+                    self.params['mountSlotRadius'],
+                    )
+            for i in (-1,1):
+                for j in (-1,1):
+                    posX = i*(0.5*self.params['width'] - insetX)
+                    posY = j*(0.5*self.params['height'] - insetY)
+                    location = (posX,posY)
+                    hole = {'type': holeType, 'size': size, 'location': location}
+                    self.holeList.append(hole)
+            holeList = self.holeList
+        super(PanelFront,self).addHoles(holeList)
 
 
 
 class PanelBottom(Panel):
 
-    def __init__(self,holeList=[],params=DEFAULT_PARAMS_BOTTOM):
+    def __init__(self,holeList=[],params=defaultParamsBottom):
         super(PanelBottom,self).__init__(holeList=holeList,params=params)
 
 
 class PanelBack(Panel):
 
-    def __init__(self,holeList=[],params=DEFAULT_PARAMS_BACK): 
+    def __init__(self,holeList=[],params=defaultParamsBack): 
         super(PanelBack,self).__init__(holeList=holeList,params=params)
 
 
 class Enclosure(object):
 
-    def __init__(self,holeDict={},params=DEFAULT_PARAMS_ENCLOSURE):
+    def __init__(self,holeDict={},params=defaultParamsEnclosure):
         self.holeDict = {'front': [], 'bottom': [], 'back': []}
         self.holeDict.update(holeDict)
         self.params = params
         self.makePanels()
-        self.makeExpansionPCB()
 
     def makePanels(self):
 
@@ -175,30 +170,30 @@ class Enclosure(object):
                 params = self.params['back']
                 )
 
+    def addHoles(self, holeDict=None):
+        if holeDict is None:
+            holeDict = self.holeDict
+        for panelName, holeList in  holeDict.iteritems():
+            panel = getattr(self,panelName)
+            panel.addHoles(holeList)
+
     def getAssembly(self,**kwargs):
 
         front = self.front
-        front = Rotate(front, a=90, v=(1,0,0))
-        posY = 0.5*self.params['bottom']['height'] + 0.5*self.params['front']['thickness']  
-        front = Translate(front,v=(0,posY,0))
+        aRot, vRot = self.getFrontPanelRotation()
+        front = Rotate(front, a=aRot, v=vRot)
+        vTrans = self.getFrontPanelTranslation()
+        front = Translate(front,v=vTrans)
 
         bottom = self.bottom
-        posZ = -0.5*self.params['front']['height'] - 0.5*self.params['bottom']['thickness']
-        posZ += self.params['front']['shelfInset']
-        posZ -= 0.5*self.params['front']['shelfThickness'] 
-        bottom = Translate(bottom, v=(0,0,posZ))
+        vTrans = self.getBottomPanelTranslation()
+        bottom = Translate(bottom, v=vTrans)
 
         back = self.back
-        back = Rotate(back,a=90,v=(1,0,0))
-
-        posY = -0.5*self.params['bottom']['height']
-        posY -= 0.5*self.params['back']['thickness']
-        posZ = 0.5*self.params['back']['height']
-        posZ -= 0.5*self.params['front']['height']
-        posZ += self.params['front']['shelfInset']
-        posZ -= 0.5*self.params['front']['shelfThickness']
-        posZ -= self.params['bottom']['thickness']
-        back = Translate(back,v=(0,posY,posZ))
+        aRot, vRot = self.getBackPanelRotation()
+        back = Rotate(back,a=aRot,v=vRot)
+        vTrans = self.getBackPanelTranslation()
+        back = Translate(back,v=vTrans)
         
         partList = []
         try:
@@ -224,47 +219,38 @@ class Enclosure(object):
 
         return partList 
 
+    def getFrontPanelRotation(self):
+        return 90, (1,0,0)
 
-class PanelsEnclosure(Enclosure):
+    def getFrontPanelTranslation(self):
+        posY = 0.5*self.params['bottom']['height'] + 0.5*self.params['front']['thickness']  
+        return 0, posY, 0
 
-    def __init__(self,holeDict={},params=DEFAULT_PARAMS_PANELS_ENCLOSURE):
-        super(PanelsEnclosure,self).__init__(holeDict={},params=params)
-        self.makeExpansionPCB()
+    def getBottomPanelTranslation(self):
+        posZ = -0.5*self.params['front']['height'] - 0.5*self.params['bottom']['thickness']
+        posZ += self.params['front']['shelfInset']
+        posZ -= 0.5*self.params['front']['shelfThickness'] 
+        return 0,0,posZ
 
-    def createHoleDict(self):
-        return {}
+    def getBackPanelRotation(self):
+        return 90, (1,0,0)
 
-    def makeExpansionPCB(self):
-        self.expansionPCB = expansion_pcb.ExpansionPCB()
-
-    def getAssembly(self,**kwargs):
-        partList = super(PanelsEnclosure,self).getAssembly(**kwargs)
-
-        expansionPCB = self.expansionPCB
-        expansionPCB = Rotate(expansionPCB,a=180,v=(0,0,1))
-        posX = self.params['expansionPCB_PosX']
-        posY = self.params['expansionPCB_PosY']
-        posZ = 0.5*self.expansionPCB.params['thickness'] + self.expansionPCB.params['standoffHeight']
-        posZ -= 0.5*self.params['front']['height'] 
+    def getBackPanelTranslation(self):
+        posY = -0.5*self.params['bottom']['height']
+        posY -= 0.5*self.params['back']['thickness']
+        posZ = 0.5*self.params['back']['height']
+        posZ -= 0.5*self.params['front']['height']
         posZ += self.params['front']['shelfInset']
         posZ -= 0.5*self.params['front']['shelfThickness']
-        expansionPCB = Translate(expansionPCB,v=(posX,posY,posZ))
-        try:
-            showExpansionPCB = kwargs['showExpansionPCB']
-        except KeyError:
-            showExpansionPCB = True
-        if showExpansionPCB:
-            partList.append(expansionPCB)
-
-        return partList
-
+        posZ -= self.params['bottom']['thickness']
+        return 0,posY,posZ
 
 
 # ---------------------------------------------------------------------------------------
 if __name__ == '__main__':
 
 
-    enclosure = PanelsEnclosure()
+    enclosure = Enclosure()
     assembly = enclosure.getAssembly(
             showFront=True,
             showBottom=True,
@@ -274,6 +260,6 @@ if __name__ == '__main__':
     prog = SCAD_Prog()
     prog.fn = 50
     prog.add(assembly)
-    prog.write('assembly.scad')
+    prog.write('mpja_assembly.scad')
 
 
