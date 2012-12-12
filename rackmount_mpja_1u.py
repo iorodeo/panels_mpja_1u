@@ -181,7 +181,8 @@ class Enclosure(object):
         for panelName in self.panelNameList:
             part = getattr(self,panelName)
             aRot, vRot = self.getRotation(panelName)
-            part = Rotate(part, a=aRot, v=vRot)
+            if aRot != 0:
+                part = Rotate(part, a=aRot, v=vRot)
             vTrans = self.getTranslation(panelName)
             part = Translate(part,v=vTrans)
             showKey = 'show{0}'.format(panelName.title())
@@ -199,7 +200,7 @@ class Enclosure(object):
         elif panelName == 'back':
             return 90, (1,0,0)
         elif panelName == 'bottom':
-            return 0, (0,0,1)
+            return 0, (0,0,0)
         else:
             raise ValueError, 'unknown panel {0}'.format(panelName)
 

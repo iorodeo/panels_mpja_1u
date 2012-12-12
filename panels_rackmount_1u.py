@@ -5,6 +5,7 @@ import component_array
 import expansion_pcb
 import controller_pcb
 import programmer_pcb
+import connector_db25
 
 defaultParamsEnclosure = rackmount_mpja_1u.defaultParamsEnclosure
 panelsParamsExtra = { 
@@ -13,6 +14,8 @@ panelsParamsExtra = {
         'controllerPCB_PosX'  : -4.36*INCH2MM,
         'controllerPCB_PosY'  :  3.27*INCH2MM,
         'programmerPCB_PosX'  : -0.71*INCH2MM,
+        'connectorDB25_PosX'  :  3.77*INCH2MM,
+        'dcJack_PosX'         :  -4.36*INCH2MM,
         }
 defaultParamsEnclosure.update(panelsParamsExtra)
 
@@ -21,17 +24,25 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
 
     def __init__(self,holeDict={},params=defaultParamsEnclosure):
         super(PanelsEnclosure,self).__init__(holeDict={},params=params)
-        self.partNameList = ['expansionPCB', 'controllerPCB', 'programmerPCB']
+        self.partNameList = [
+                'expansionPCB', 
+                'controllerPCB', 
+                'programmerPCB',
+                'connectorDB25'
+                ]
         self.expansionPCB = expansion_pcb.ExpansionPCB()
         self.controllerPCB = controller_pcb.ControllerPCB()
         self.programmerPCB = programmer_pcb.ProgrammerPCB()
+        self.connectorDB25 = connector_db25.Connector_db25() 
         self.makeHoles()
+
 
     def makeHoles(self):
         """
         Creates holes in enclosure panels based on cut arrays
         """
 
+        # Add pcb, connectot component holes
         for panelName in self.panelNameList:
             # Get panel object and thickness
             thickness = self.params[panelName]['thickness']
@@ -46,7 +57,8 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
 
                 # Move cut array into part positoin
                 aRot, vRot = self.getRotation(partName)
-                cutArray = Rotate(cutArray,a=aRot,v=vRot)
+                if aRot != 0:
+                    cutArray = Rotate(cutArray,a=aRot,v=vRot)
                 v = self.getTranslation(partName)
                 cutArray = Translate(cutArray,v=v)
 
@@ -64,13 +76,11 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
         for partName in self.partNameList:
             part = getattr(self, partName)
             aRot, vRot = self.getRotation(partName)
-            part = Rotate(part,a=aRot,v=vRot)
+            if aRot != 0:
+                part = Rotate(part,a=aRot,v=vRot)
             vTrans = self.getTranslation(partName)
             part = Translate(part,v=vTrans)
-            if 'PCB' in partName:
-                showKey = 'show{0}PCB'.format(partName[:-3].title())
-            else:
-                showKey = 'show{0}'.format(partName.title())
+            showKey = 'show{0}{1}'.format(partName[0].upper(), partName[1:])
             try:
                 showValue = kwargs[showKey]
             except KeyError:
@@ -86,6 +96,8 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
         elif partName == 'controllerPCB':
             rotationValues = 180, (0,0,1)
         elif partName == 'programmerPCB':
+            rotationValues = 90, (1,0,0)
+        elif partName == 'connectorDB25':
             rotationValues = 90, (1,0,0)
         else:
             rotationValues = super(PanelsEnclosure,self).getRotation(partName)
@@ -116,6 +128,12 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
             posY += 0.5*self.params['bottom']['height']
             posY += self.params['front']['thickness']
             posZ = 0
+        elif partName == 'connectorDB25':
+            posX = self.params['connectorDB25_PosX'] 
+            posY = -0.5*self.connectorDB25.params['baseZ']
+            posY -= 0.5*self.params['bottom']['height'] 
+            posY -= self.params['back']['thickness']
+            posZ = 0
         else:
             posX, posY, posZ = super(PanelsEnclosure,self).getTranslation(partName)
         return posX, posY, posZ
@@ -130,7 +148,8 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
         vTransInv = [-x for x in vTrans]
         part = Translate(part, v=vTransInv)
         aRot, vRot = self.getRotation(panelName)
-        part = Rotate(part,a=-aRot,v=vRot)
+        if aRot != 0:
+            part = Rotate(part,a=-aRot,v=vRot)
         return part
 
 
@@ -145,6 +164,7 @@ if __name__ == '__main__':
             showExpansionPCB=True,
             showControllerPCB=True,
             showProgrammerPCB=True,
+            showConnectorDB25=True,
             )
 
     prog = SCAD_Prog()

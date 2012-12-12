@@ -7,14 +7,22 @@ from py2scad import *
 import connector_bnc
 import component_array
 
+standoffPosList = [
+        ( 3.2*INCH2MM,  0.9*INCH2MM),
+        (-3.2*INCH2MM,  0.9*INCH2MM),
+        (-2.6*INCH2MM, -0.3501*INCH2MM),
+        ( 3.0*INCH2MM, -0.3501*INCH2MM),
+        ]
+
 defaultParams = { 
         'sideX'                : 8.0*INCH2MM,
-        'sideY'                : 2*INCH2MM,
+        'sideY'                : 2.0*INCH2MM,
         'thickness'            : 1.75,
         'standoffHeight'       : 0.375*INCH2MM,
         'standoffRadius'       : 3.23,
         'standoffPosX'         : 3.2*INCH2MM,
         'standoffPosY'         : 0.9*INCH2MM,
+        'standoffPosList'      : standoffPosList,
         'standoffScrewRadius'  : 1.39,
         'standoffScrewHeight'  : 15,
         'connector'            : connector_bnc.Connector_BNC(),
@@ -55,14 +63,13 @@ class ExpansionPCB:
                 r2=standoffRadius
                 )
         standoffList = []
-
-        for i in (-1,1):
-            for j in (-1,1):
-                posZ = -(0.5*standoffHeight + 0.5*thickness)
-                posX = i*standoffPosX
-                posY = j*standoffPosY
-                standoffTemp = Translate(standoff, v=[posX,posY,posZ])
-                standoffList.append(standoffTemp)
+        self.standoffTransList = []
+        posZ = -(0.5*standoffHeight + 0.5*thickness)
+        for posX, posY in self.params['standoffPosList']: 
+            v = posX, posY, posZ
+            standoffTemp = Translate(standoff, v=v)
+            standoffList.append(standoffTemp)
+            self.standoffTransList.append(v)
 
         self.part = Union([PCB,connectorArray]+standoffList)
 
@@ -86,7 +93,7 @@ class ExpansionPCB:
         elif panelName == 'back':
             cutArray = None
         elif panelName == 'bottom':
-            cutArray = None
+            cutArray = self.getCutArrayBottom(panelThickness)
         else:
             raise ValueError, 'uknown panel {0}'.format(panelName)
         return cutArray
@@ -122,6 +129,21 @@ class ExpansionPCB:
         cutArray = Translate(cutArray,v=vTrans)
         return cutArray
 
+    def getCutArrayBottom(self,panelThickness):
+        standoffHeight = self.params['standoffHeight']
+        standoffScrewRadius = self.params['standoffScrewRadius']
+        cutCylinder = Cylinder(
+                h  = standoffHeight + 2*panelThickness,
+                r1 = standoffScrewRadius,
+                r2 = standoffScrewRadius
+                )
+        cutArray = []
+        for v in self.standoffTransList:
+            cutArray.append(Translate(cutCylinder,v=v))
+        cutArray = Union(cutArray)
+        return cutArray
+
+
     def __str__(self):
         return self.part.__str__()
 
@@ -129,10 +151,17 @@ class ExpansionPCB:
 #------------------------------------------------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    includeCutArray = True
+    cutArrayPanel = 'bottom'
+
     pcb = ExpansionPCB()
     prog = SCAD_Prog()
-    prog.fn=10
+    prog.fn=50
     prog.add(pcb)
+    if includeCutArray:
+        cutArray = pcb.getCutArray(cutArrayPanel,3.0)
+        if cutArray is not None:
+            prog.add(cutArray)
     prog.write('expansion_pcb.scad')     
 
 
