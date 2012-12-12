@@ -39,6 +39,7 @@ defaultParamsControllerPCB = {
         'sdPosX'               :  1.51*INCH2MM,      
         'db9PosX'              : -0.251*INCH2MM, 
         'standoffPosList'      : standoffPosList,
+        'clearance'            :  1.1,
         }
 
 
@@ -100,7 +101,18 @@ class ControllerPCB:
 
         self.part = Union([pcb] + self.componentDict.values() + self.standoffDict.values())
 
-    def getCutArray(self,clearance,panelThickness):
+    def getCutArray(self,panelName,panelThickness):
+        if panelName == 'front':
+            cutArray = self.getCutArrayFront(panelThickness)
+        elif panelName == 'back':
+            cutArray = None
+        elif panelName == 'bottom':
+            cutArray = self.getCutArrayBottom(panelThickness) 
+        else:
+            raise ValueError, 'unknown panel {0}'.format(panelName)
+        return cutArray
+
+    def getCutArrayFront(self,panelThickness):
         ledParams = copy.deepcopy(led.defaultParamsLedArray)
         baseSize = ledParams['led']['baseSize']
         baseSize = (baseSize[0], 2*(baseSize[1]+panelThickness), baseSize[2])
@@ -115,21 +127,21 @@ class ControllerPCB:
         ledParams['number'] = 1
         led1Cut = led.LedArray(ledParams)
 
-        usbX = self.params['usbX'] + 2*clearance
+        usbX = self.params['usbX'] + 2*self.params['clearance']
         usbY = 2*(self.params['usbY'] + panelThickness)
-        usbZ = self.params['usbZ'] + 2*clearance
+        usbZ = self.params['usbZ'] + 2*self.params['clearance']
         usbSize = usbX, usbY, usbZ
         usbCut = Cube(size=usbSize)
 
-        sdX = self.params['sdX'] + 2*clearance
+        sdX = self.params['sdX'] + 2*self.params['clearance']
         sdY = 2*(self.params['sdY'] + panelThickness)
-        sdZ = self.params['sdZ'] + 2*clearance
+        sdZ = self.params['sdZ'] + 2*self.params['clearance']
         sdSize = sdX, sdY, sdZ
         sdCut = Cube(size=sdSize)
 
-        db9X = self.params['db9X'] + 2*clearance
+        db9X = self.params['db9X'] + 2*self.params['clearance']
         db9Y = 2*(self.params['db9Y'] + panelThickness)
-        db9Z = self.params['db9Z'] + 2*clearance
+        db9Z = self.params['db9Z'] + 2*self.params['clearance']
         db9Size = db9X, db9Y, db9Z
         db9Cut = Cube(size=db9Size)
 
@@ -149,6 +161,20 @@ class ControllerPCB:
 
         return cutArray
 
+    def getCutArrayBottom(self,panelThickness):
+        standoffScrewRadius = self.params['standoffScrewRadius']
+        standoffHeight = self.params['standoffHeight']
+        cutCyl = Cylinder(
+                h  = standoffHeight + 2*panelThickness,
+                r1 = standoffScrewRadius,
+                r2 = standoffScrewRadius
+                )
+        cutArray = []
+        for standoffName in self.standoffDict:
+            v = self.getTranslation(standoffName)
+            cutArray.append(Translate(cutCyl,v=v))
+        cutArray = Union(cutArray)
+        return cutArray 
 
     def getTranslation(self,partName): 
         pcbX = self.params['pcbX']
@@ -213,10 +239,16 @@ class ControllerPCB:
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
-    pcb = ControllerPCB()
+    includeCutArray = True 
+    cutArrayPanel = 'bottom'
 
+    pcb = ControllerPCB()
     prog = SCAD_Prog()
     prog.fn=10
     prog.add(pcb)
+
+    if includeCutArray:
+        cutArray = pcb.getCutArray(cutArrayPanel, 3.0)
+        prog.add(cutArray)
     prog.write('controller_pcb.scad')     
 

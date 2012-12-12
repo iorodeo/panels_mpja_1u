@@ -16,7 +16,7 @@ defaultParams = {
         'tapHoleRadius'     : 0.044*INCH2MM,
         'cutoutX'           : 0.5*INCH2MM,
         'cutoutY'           : 1.4*INCH2MM,
-        'standoffHeight'    : 0.25*INCH2MM,
+        'standoffHeight'    : 0.125*INCH2MM,
         'standoffRadius'    : 0.5*0.25*INCH2MM,
         }
 
@@ -68,7 +68,18 @@ class ProgrammerPCB(object):
 
         self.part = Union([pcb] + standoffList)
 
-    def getCutArray(self,panelThickness):
+    def getCutArray(self,panelName,panelThickness):
+        if panelName == 'front':
+            cutArray = self.getCutArrayFront(panelThickness)
+        elif panelName == 'back':
+            cutArray = None
+        elif panelName == 'bottom':
+            cutArray = None
+        else:
+            raise ValueError, 'unkown panel {0}'.format(panelName)
+        return cutArray
+
+    def getCutArrayFront(self,panelThickness):
 
         cutoutX = self.params['cutoutX']
         cutoutY = self.params['cutoutY']
@@ -100,7 +111,7 @@ if __name__ == "__main__":
 
     panelThickness = 3.0
     pcb = ProgrammerPCB()
-    cutArray = pcb.getCutArray(panelThickness)
+    cutArray = pcb.getCutArray('front', panelThickness)
     prog = SCAD_Prog()
     prog.fn=50
     prog.add(pcb)

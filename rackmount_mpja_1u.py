@@ -10,7 +10,7 @@ defaultParamsFront =  {
         'mountSlotHeight' :  0.24*INCH2MM,
         'mountSlotRadius' :  0.5*0.24*INCH2MM,
         'mountSlotInset'  :  (0.345*INCH2MM, 0.2525*INCH2MM),
-        'shelfWidth'       :  15.62*INCH2MM,
+        'shelfWidth'       :  15.625*INCH2MM,
         'shelfDepth'       :  0.4315*INCH2MM,
         'shelfThickness'   :  0.0830*INCH2MM,
         'shelfInset'       :  0.1635*INCH2MM,
@@ -33,8 +33,6 @@ defaultParamsEnclosure = {
         'bottom' : defaultParamsBottom,
         'back'   : defaultParamsBack,
         }
-
-
 
 class Panel(object):
     """
@@ -150,13 +148,14 @@ class PanelBack(Panel):
 class Enclosure(object):
 
     def __init__(self,holeDict={},params=defaultParamsEnclosure):
-        self.holeDict = {'front': [], 'bottom': [], 'back': []}
+        self.panelNameList = ['front', 'bottom', 'back']
+        self.holeDict = dict(zip(self.panelNameList, [[] for x in self.panelNameList]))
+        self.panelNameList = self.holeDict.keys()
         self.holeDict.update(holeDict)
         self.params = params
         self.makePanels()
 
     def makePanels(self):
-
         self.front = PanelFront(
                 holeList = self.holeDict['front'],
                 params = self.params['front']
@@ -178,77 +177,60 @@ class Enclosure(object):
             panel.addHoles(holeList)
 
     def getAssembly(self,**kwargs):
-
-        front = self.front
-        aRot, vRot = self.getFrontPanelRotation()
-        front = Rotate(front, a=aRot, v=vRot)
-        vTrans = self.getFrontPanelTranslation()
-        front = Translate(front,v=vTrans)
-
-        bottom = self.bottom
-        vTrans = self.getBottomPanelTranslation()
-        bottom = Translate(bottom, v=vTrans)
-
-        back = self.back
-        aRot, vRot = self.getBackPanelRotation()
-        back = Rotate(back,a=aRot,v=vRot)
-        vTrans = self.getBackPanelTranslation()
-        back = Translate(back,v=vTrans)
-        
         partList = []
-        try:
-            showFront = kwargs['showFront']
-        except KeyError:
-            showFront = True
-        if showFront:
-            partList.append(front)
-        
-        try:
-            showBottom = kwargs['showBottom']
-        except KeyError:
-            showBottom = True
-        if showBottom:
-            partList.append(bottom)
-
-        try:
-            showBack = kwargs['showBack']
-        except KeyError:
-            showBack = True
-        if showBack:
-            partList.append(back)
-
+        for panelName in self.panelNameList:
+            part = getattr(self,panelName)
+            aRot, vRot = self.getRotation(panelName)
+            part = Rotate(part, a=aRot, v=vRot)
+            vTrans = self.getTranslation(panelName)
+            part = Translate(part,v=vTrans)
+            showKey = 'show{0}'.format(panelName.title())
+            try:
+                showVal = kwargs[showKey]
+            except KeyError:
+                showVal = True
+            if showVal:
+                partList.append(part)
         return partList 
 
-    def getFrontPanelRotation(self):
-        return 90, (1,0,0)
+    def getRotation(self,panelName):
+        if panelName == 'front':
+            return 90, (1,0,0)
+        elif panelName == 'back':
+            return 90, (1,0,0)
+        elif panelName == 'bottom':
+            return 0, (0,0,1)
+        else:
+            raise ValueError, 'unknown panel {0}'.format(panelName)
 
-    def getFrontPanelTranslation(self):
-        posY = 0.5*self.params['bottom']['height'] + 0.5*self.params['front']['thickness']  
-        return 0, posY, 0
-
-    def getBottomPanelTranslation(self):
-        posZ = -0.5*self.params['front']['height'] - 0.5*self.params['bottom']['thickness']
-        posZ += self.params['front']['shelfInset']
-        posZ -= 0.5*self.params['front']['shelfThickness'] 
-        return 0,0,posZ
-
-    def getBackPanelRotation(self):
-        return 90, (1,0,0)
-
-    def getBackPanelTranslation(self):
-        posY = -0.5*self.params['bottom']['height']
-        posY -= 0.5*self.params['back']['thickness']
-        posZ = 0.5*self.params['back']['height']
-        posZ -= 0.5*self.params['front']['height']
-        posZ += self.params['front']['shelfInset']
-        posZ -= 0.5*self.params['front']['shelfThickness']
-        posZ -= self.params['bottom']['thickness']
-        return 0,posY,posZ
-
+    def getTranslation(self,panelName):
+        if panelName == 'front':
+            posX = 0
+            posY = 0.5*self.params['bottom']['height'] 
+            posY += 0.5*self.params['front']['thickness']  
+            posZ = 0
+        elif panelName == 'back':
+            posX = 0
+            posY = -0.5*self.params['bottom']['height']
+            posY -= 0.5*self.params['back']['thickness']
+            posZ = 0.5*self.params['back']['height']
+            posZ -= 0.5*self.params['front']['height']
+            posZ += self.params['front']['shelfInset']
+            posZ -= 0.5*self.params['front']['shelfThickness']
+            posZ -= self.params['bottom']['thickness']
+        elif panelName == 'bottom':
+            posX = 0
+            posY = 0
+            posZ = -0.5*self.params['front']['height'] 
+            posZ -= 0.5*self.params['bottom']['thickness']
+            posZ += self.params['front']['shelfInset']
+            posZ -= 0.5*self.params['front']['shelfThickness'] 
+        else:
+            raise ValueError, 'unknown panel {0}'.format(panelName)
+        return posX, posY, posZ
 
 # ---------------------------------------------------------------------------------------
 if __name__ == '__main__':
-
 
     enclosure = Enclosure()
     assembly = enclosure.getAssembly(

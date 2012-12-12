@@ -20,6 +20,7 @@ defaultParams = {
         'connector'            : connector_bnc.Connector_BNC(),
         'connectorSpacing'     : 0.8*INCH2MM,
         'numberOfConnector'    : 10,
+        'clearance'            :  0.625,
         }
 
 
@@ -79,10 +80,21 @@ class ExpansionPCB:
         posZ = 0.5*connector.params['baseZ'] + 0.5*self.params['thickness']
         return 0,posY,posZ
 
-    def getCutArray(self,clearance, panelThickness):
+    def getCutArray(self,panelName,panelThickness):
+        if panelName == 'front':
+            cutArray = self.getCutArrayFront(panelThickness)
+        elif panelName == 'back':
+            cutArray = None
+        elif panelName == 'bottom':
+            cutArray = None
+        else:
+            raise ValueError, 'uknown panel {0}'.format(panelName)
+        return cutArray
+
+    def getCutArrayFront(self,panelThickness):
         connector= self.params['connector']
         threadRadius = connector.params['threadRadius']
-        thruHoleRadius = threadRadius + clearance
+        thruHoleRadius = threadRadius + self.params['clearance']
         threadHeight = connector.params['threadHeight']
         cutCylinderHeight = max([2*panelThickness, 2*threadHeight])
 
