@@ -4,12 +4,9 @@ syntax: glob
 *.o
 *.egg-info
 *.swp
-*.scad
-*.stl
-*.pkl
-*.dxf
 *.komodo*
 *.egg-info
+*.scad
 .DS_Store
 build
 dist
