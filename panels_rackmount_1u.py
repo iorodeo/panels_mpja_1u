@@ -1,11 +1,15 @@
 from __future__ import print_function
 from py2scad import *
+import os
+import subprocess
 import rackmount_mpja_1u 
 import component_array
 import expansion_pcb
 import controller_pcb
 import programmer_pcb
 import connector_db25
+import dc_jack
+import power_switch
 
 defaultParamsEnclosure = rackmount_mpja_1u.defaultParamsEnclosure
 panelsParamsExtra = { 
@@ -15,7 +19,8 @@ panelsParamsExtra = {
         'controllerPCB_PosY'  :  3.27*INCH2MM,
         'programmerPCB_PosX'  : -0.71*INCH2MM,
         'connectorDB25_PosX'  :  3.77*INCH2MM,
-        'dcJack_PosX'         :  -4.36*INCH2MM,
+        'dcJack_PosX'         : -4.36*INCH2MM,
+        'powerSwitch_PosX'    :  -7.95*INCH2MM, 
         }
 defaultParamsEnclosure.update(panelsParamsExtra)
 
@@ -28,14 +33,17 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
                 'expansionPCB', 
                 'controllerPCB', 
                 'programmerPCB',
-                'connectorDB25'
+                'connectorDB25',
+                'dcJack',
+                'powerSwitch',
                 ]
         self.expansionPCB = expansion_pcb.ExpansionPCB()
         self.controllerPCB = controller_pcb.ControllerPCB()
         self.programmerPCB = programmer_pcb.ProgrammerPCB()
         self.connectorDB25 = connector_db25.Connector_db25() 
+        self.dcJack = dc_jack.DCJack()
+        self.powerSwitch = power_switch.PowerSwitch()
         self.makeHoles()
-
 
     def makeHoles(self):
         """
@@ -99,6 +107,10 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
             rotationValues = 90, (1,0,0)
         elif partName == 'connectorDB25':
             rotationValues = 90, (1,0,0)
+        elif partName == 'dcJack':
+            rotationValues = -90, (1,0,0)
+        elif partName == 'powerSwitch':
+            rotationValues = 90, (1,0,0)
         else:
             rotationValues = super(PanelsEnclosure,self).getRotation(partName)
         return rotationValues
@@ -134,6 +146,16 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
             posY -= 0.5*self.params['bottom']['height'] 
             posY -= self.params['back']['thickness']
             posZ = 0
+        elif partName == 'dcJack':
+            posX = self.params['dcJack_PosX'] 
+            posY = -0.5*self.params['bottom']['height']
+            posY -= self.params['back']['thickness']
+            posZ = 0
+        elif partName == 'powerSwitch':
+            posX = self.params['powerSwitch_PosX'] 
+            posY = 0.5*self.params['bottom']['height'] 
+            posY += self.params['front']['thickness']
+            posZ = 0
         else:
             posX, posY, posZ = super(PanelsEnclosure,self).getTranslation(partName)
         return posX, posY, posZ
@@ -152,9 +174,54 @@ class PanelsEnclosure(rackmount_mpja_1u.Enclosure):
             part = Rotate(part,a=-aRot,v=vRot)
         return part
 
+    def getPanelProjectionRotation(self,panelName):
+        if panelName == 'front':
+            return 180, (0,1,0)
+        else:
+            return 0, (0,0,0)
+
+    def getPanelProjections(self,pretend=False):
+        """
+        Returns a dictionary of projections of the enclosure panels
+        """
+        projDict = {}
+        for panelName in self.panelNameList:
+            panel = getattr(self, panelName)
+            a,v = self.getPanelProjectionRotation(panelName)
+            if a != 0:
+                panel = Rotate(panel,a=a,v=v)
+            if pretend:
+                panelProj = panel
+            else:
+                panelProj = Projection(panel)
+            projDict[panelName] = panelProj
+        return projDict
+
+    def writePanelProjectionSCAD(self,fn=50,pretend=False):
+        projDict = self.getPanelProjections(pretend=pretend)
+        fileNameList = []
+        for name, projection in projDict.iteritems():
+            prog = SCAD_Prog()
+            prog.fn = fn
+            prog.add(projection)
+            fileName = '{0}.scad'.format(name)
+            prog.write(fileName)
+            fileNameList.append(fileName)
+        return fileNameList
+
+    def writePanelProjectionDXF(self,fn=50):
+        scadFileList = self.writePanelProjectionSCAD()
+        for scadFile in scadFileList:
+            baseName, extName = os.path.splitext(scadFile)
+            dxfFile = '{0}.dxf'.format(baseName)
+            cmdList = ['openscad', '-x', dxfFile, scadFile]
+            print('creating: {0}'.format(dxfFile))
+            subprocess.call(cmdList)
 
 # ---------------------------------------------------------------------------------------
 if __name__ == '__main__':
+
+    createDXF = True
 
     enclosure = PanelsEnclosure()
     assembly = enclosure.getAssembly(
@@ -165,11 +232,16 @@ if __name__ == '__main__':
             showControllerPCB=True,
             showProgrammerPCB=True,
             showConnectorDB25=True,
+            showDcJack=True,
             )
 
     prog = SCAD_Prog()
     prog.fn = 50
     prog.add(assembly)
     prog.write('panels_assembly.scad')
+
+    enclosure.writePanelProjectionSCAD()
+    if createDXF:
+        enclosure.writePanelProjectionDXF()
 
 

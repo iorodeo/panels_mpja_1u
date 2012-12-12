@@ -7,7 +7,6 @@ from py2scad import *
 import led
 import copy
 
-
 standoffPosList = [ 
         (-3.302*INCH2MM,  2.362*INCH2MM),
         ( 3.293*INCH2MM,  2.372*INCH2MM),

@@ -15,7 +15,7 @@ defaultParams = {
         'holeRadius'        : 0.060*INCH2MM,
         'tapHoleRadius'     : 0.044*INCH2MM,
         'cutoutX'           : 0.5*INCH2MM,
-        'cutoutY'           : 1.4*INCH2MM,
+        'cutoutY'           : 1.325*INCH2MM,
         'standoffHeight'    : 0.125*INCH2MM,
         'standoffRadius'    : 0.5*0.25*INCH2MM,
         }
