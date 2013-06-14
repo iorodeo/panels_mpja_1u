@@ -1,0 +1,2 @@
+jumper wire 0.1", 4-pin, 12"     Sparkfun PRT-10374 
+26 pin ribbon cable              Jameco 643971 
