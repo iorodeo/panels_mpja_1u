@@ -1,0 +1,81 @@
+
+; Generic Start
+G40 (Cancel cutter radius compensation)
+G49 (Cancel tool length offset)
+G80 (Cancel canned cycle)
+G54 (Select coordinate system 1)
+G90 (Set absolute distance mode)
+G20 (Set units to inches)
+G61 (Exact path mode)
+
+F 25.0
+
+; Begin PeckDrill
+; ------------------------------------------------------------
+; layers: ['hole_thru_4-40']
+; startZ: 0.0
+; startCond: minX
+; stopZ: -0.12
+; startDwell: 2.0
+; fileName: db25_hole_plate.dxf
+; safeZ: 0.3
+; dxfTypes: ['CIRCLE']
+; centerX: -0.926
+; centerY: 0.0
+; stepZ: 0.03
+
+; PeckDrill: rapid move to safe z
+G0 Z0.30000000
+
+; PeckDrill: rapid move to drill x,y
+G0 X-0.92600000 Y0.00000000
+
+; PeckDrill: dwell
+G4 P2.0
+
+; PeckDrill: move to start z
+G1 Z0.00000000
+G83 X-0.926 Y0.0 Z-0.12 R0.0 Q0.03
+
+; PeckDrill: rapid move to safe z
+G0 Z0.30000000
+
+; End PeckDrill
+; ------------------------------------------------------------
+
+
+; Begin PeckDrill
+; ------------------------------------------------------------
+; layers: ['hole_thru_4-40']
+; startZ: 0.0
+; startCond: minX
+; stopZ: -0.12
+; startDwell: 2.0
+; fileName: db25_hole_plate.dxf
+; safeZ: 0.3
+; dxfTypes: ['CIRCLE']
+; centerX: 0.926
+; centerY: 0.0
+; stepZ: 0.03
+
+; PeckDrill: rapid move to safe z
+G0 Z0.30000000
+
+; PeckDrill: rapid move to drill x,y
+G0 X0.92600000 Y0.00000000
+
+; PeckDrill: dwell
+G4 P2.0
+
+; PeckDrill: move to start z
+G1 Z0.00000000
+G83 X0.926 Y0.0 Z-0.12 R0.0 Q0.03
+
+; PeckDrill: rapid move to safe z
+G0 Z0.30000000
+
+; End PeckDrill
+; ------------------------------------------------------------
+
+
+M2 (End program)
