@@ -4,7 +4,7 @@ import sys
 from py2gcode import gcode_cmd
 from py2gcode import cnc_dxf
 
-fileName = 'db25_hole_plate.dxf'
+fileName = sys.argv[1]
 
 feedrate = 120.0
 
