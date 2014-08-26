@@ -62,17 +62,17 @@ G1 X3.46520411 Y2.75075738 Z-0.12000000
 G1 X3.46520411 Y3.26075738 Z-0.12000000
 G1 X1.83020411 Y3.26075738 Z-0.12000000
 G1 X1.83020411 Y2.75075738 Z-0.12000000
-G1 X2.64770411 Y2.75075738 Z-0.12000000
+G1 X1.89270411 Y2.75075738 Z-0.12000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.30000000
 G40
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X2.77270411 Y2.75075738
+G0 X2.01770411 Y2.75075738
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X2.64770411 Y2.75075738
+G0 X1.89270411 Y2.75075738
 
 ; End LineSegBoundaryXY
 ; ------------------------------------------------------------
@@ -130,17 +130,17 @@ G1 X3.42105252 Y1.03988331 Z-0.12000000
 G1 X3.42105252 Y1.54988331 Z-0.12000000
 G1 X1.78605252 Y1.54988331 Z-0.12000000
 G1 X1.78605252 Y1.03988331 Z-0.12000000
-G1 X2.60355252 Y1.03988331 Z-0.12000000
+G1 X1.84855252 Y1.03988331 Z-0.12000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.30000000
 G40
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X2.72855252 Y1.03988331
+G0 X1.97355252 Y1.03988331
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X2.60355252 Y1.03988331
+G0 X1.84855252 Y1.03988331
 
 ; End LineSegBoundaryXY
 ; ------------------------------------------------------------
@@ -198,17 +198,17 @@ G1 X7.21808915 Y2.77835212 Z-0.12000000
 G1 X7.21808915 Y3.28835212 Z-0.12000000
 G1 X5.58308915 Y3.28835212 Z-0.12000000
 G1 X5.58308915 Y2.77835212 Z-0.12000000
-G1 X6.40058915 Y2.77835212 Z-0.12000000
+G1 X5.64558915 Y2.77835212 Z-0.12000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.30000000
 G40
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X6.52558915 Y2.77835212
+G0 X5.77058915 Y2.77835212
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X6.40058915 Y2.77835212
+G0 X5.64558915 Y2.77835212
 
 ; End LineSegBoundaryXY
 ; ------------------------------------------------------------
@@ -266,17 +266,17 @@ G1 X7.17393756 Y1.06747806 Z-0.12000000
 G1 X7.17393756 Y1.57747806 Z-0.12000000
 G1 X5.53893756 Y1.57747806 Z-0.12000000
 G1 X5.53893756 Y1.06747806 Z-0.12000000
-G1 X6.35643756 Y1.06747806 Z-0.12000000
+G1 X5.60143756 Y1.06747806 Z-0.12000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.30000000
 G40
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X6.48143756 Y1.06747806
+G0 X5.72643756 Y1.06747806
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X6.35643756 Y1.06747806
+G0 X5.60143756 Y1.06747806
 
 ; End LineSegBoundaryXY
 ; ------------------------------------------------------------
