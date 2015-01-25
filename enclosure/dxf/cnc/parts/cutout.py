@@ -9,11 +9,11 @@ Notes
 
 Onsrud 63-610 (need coolant - denature alcohol) 
 feedrate = RPM * (num flute) * (chip load)
-cutter diam 1/8" 
+cutter diam 1/8in
 num flute = 1
-chip load = 0.003
 RPM = 25000 (setting 6)
-feedrate = 75 "/min
+chip load = 0.0030, feedrate = 75 in/min
+chip load = 0.0034, feedrate = 85 in/min
 
 Nigara - terrible gummed up
 num flute = 2
@@ -24,17 +24,22 @@ feedrate = 36 "/min
 
 
 """
+testCut = False 
 
-feedrate = 75.0
-fileName = 'layout.dxf'
-#fileName = 'layout_single.dxf'
-depth = 0.2
-#depth = 0.02
+feedrate = 85.0
+#fileName = 'layout.dxf'
+fileName = 'layout_single_1_tmp.dxf'
+
+if testCut:
+    depth = 0.02
+    toolDiam = 0.001
+else:
+    depth = 0.2
+    toolDiam = 0.125 
+
 startZ = 0.0
 safeZ = 0.5
 maxCutDepth = 0.03
-toolDiam = 0.125 
-#toolDiam = 0.001
 direction = 'ccw'
 cutterComp = 'inside'
 overlap = 0.4
@@ -59,8 +64,11 @@ param = {
         'overlap'      : overlap,
         'startDwell'   : startDwell,
         }
-boundary = cnc_dxf.DxfCircPocket(param)
-prog.add(boundary)
+if testCut:
+    cut = cnc_dxf.DxfCircBoundary(param)
+else:
+    cut = cnc_dxf.DxfCircPocket(param)
+prog.add(cut)
 
 param = {
         'fileName'    : fileName,
@@ -77,9 +85,11 @@ param = {
         'cornerCut'   : False,
         'startCond'   : startCond,
         }
-#boundary = cnc_dxf.DxfBoundary(param)
-boundary = cnc_dxf.DxfRectPocketFromExtent(param)
-prog.add(boundary)
+if testCut:
+    cut = cnc_dxf.DxfBoundary(param)
+else:
+    cut = cnc_dxf.DxfRectPocketFromExtent(param)
+prog.add(cut)
 
 
 prog.add(gcode_cmd.Space())

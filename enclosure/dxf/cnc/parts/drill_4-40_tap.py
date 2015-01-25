@@ -15,12 +15,16 @@ Notes
 
 """
 
+testCut = False 
+
 feedrate = 24.0
 #fileName = 'layout.dxf'
-fileName = 'layout_single.dxf'
-
+fileName = 'layout_single_1.dxf'
 startZ = 0.01
-stopZ = -0.25
+if testCut:
+    stopZ = startZ - 0.05
+else:
+    stopZ = -0.25
 safeZ = 0.5
 stepZ = 0.03
 startDwell = 0.5

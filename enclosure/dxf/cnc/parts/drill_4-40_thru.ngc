@@ -13,14 +13,14 @@ F 24.0
 ; Begin PeckDrill
 ; ------------------------------------------------------------
 ; layers: ['4-40 Through Hole']
-; startZ: 0.0
+; startZ: 0.01
 ; startCond: minX
 ; stopZ: -0.25
 ; startDwell: 0.5
-; fileName: layout_single.dxf
+; fileName: layout_single_1.dxf
 ; safeZ: 0.5
 ; dxfTypes: ['CIRCLE']
-; centerX: 9.97751238149
+; centerX: 28.9775123815
 ; centerY: 1.59700787402
 ; stepZ: 0.03
 
@@ -28,14 +28,14 @@ F 24.0
 G0 Z0.50000000
 
 ; PeckDrill: rapid move to drill x,y
-G0 X9.97751238 Y1.59700787
+G0 X28.97751238 Y1.59700787
 
 ; PeckDrill: dwell
 G4 P0.5
 
 ; PeckDrill: move to start z
-G1 Z0.00000000
-G83 X9.97751238149 Y1.59700787402 Z-0.25 R0.0 Q0.03
+G1 Z0.01000000
+G83 X28.9775123815 Y1.59700787402 Z-0.25 R0.01 Q0.03
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.50000000
@@ -47,14 +47,14 @@ G0 Z0.50000000
 ; Begin PeckDrill
 ; ------------------------------------------------------------
 ; layers: ['4-40 Through Hole']
-; startZ: 0.0
+; startZ: 0.01
 ; startCond: minX
 ; stopZ: -0.25
 ; startDwell: 0.5
-; fileName: layout_single.dxf
+; fileName: layout_single_1.dxf
 ; safeZ: 0.5
 ; dxfTypes: ['CIRCLE']
-; centerX: 13.9145323947
+; centerX: 32.9145323947
 ; centerY: 1.59699964691
 ; stepZ: 0.03
 
@@ -62,14 +62,14 @@ G0 Z0.50000000
 G0 Z0.50000000
 
 ; PeckDrill: rapid move to drill x,y
-G0 X13.91453239 Y1.59699965
+G0 X32.91453239 Y1.59699965
 
 ; PeckDrill: dwell
 G4 P0.5
 
 ; PeckDrill: move to start z
-G1 Z0.00000000
-G83 X13.9145323947 Y1.59699964691 Z-0.25 R0.0 Q0.03
+G1 Z0.01000000
+G83 X32.9145323947 Y1.59699964691 Z-0.25 R0.01 Q0.03
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.50000000
@@ -81,14 +81,14 @@ G0 Z0.50000000
 ; Begin PeckDrill
 ; ------------------------------------------------------------
 ; layers: ['4-40 Through Hole']
-; startZ: 0.0
+; startZ: 0.01
 ; startCond: minX
 ; stopZ: -0.25
 ; startDwell: 0.5
-; fileName: layout_single.dxf
+; fileName: layout_single_1.dxf
 ; safeZ: 0.5
 ; dxfTypes: ['CIRCLE']
-; centerX: 9.97751518287
+; centerX: 28.9775151829
 ; centerY: 8.19200476273
 ; stepZ: 0.03
 
@@ -96,14 +96,14 @@ G0 Z0.50000000
 G0 Z0.50000000
 
 ; PeckDrill: rapid move to drill x,y
-G0 X9.97751518 Y8.19200476
+G0 X28.97751518 Y8.19200476
 
 ; PeckDrill: dwell
 G4 P0.5
 
 ; PeckDrill: move to start z
-G1 Z0.00000000
-G83 X9.97751518287 Y8.19200476273 Z-0.25 R0.0 Q0.03
+G1 Z0.01000000
+G83 X28.9775151829 Y8.19200476273 Z-0.25 R0.01 Q0.03
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.50000000
@@ -115,14 +115,14 @@ G0 Z0.50000000
 ; Begin PeckDrill
 ; ------------------------------------------------------------
 ; layers: ['4-40 Through Hole']
-; startZ: 0.0
+; startZ: 0.01
 ; startCond: minX
 ; stopZ: -0.25
 ; startDwell: 0.5
-; fileName: layout_single.dxf
+; fileName: layout_single_1.dxf
 ; safeZ: 0.5
 ; dxfTypes: ['CIRCLE']
-; centerX: 13.9045106517
+; centerX: 32.9045106517
 ; centerY: 8.1920060767
 ; stepZ: 0.03
 
@@ -130,14 +130,14 @@ G0 Z0.50000000
 G0 Z0.50000000
 
 ; PeckDrill: rapid move to drill x,y
-G0 X13.90451065 Y8.19200608
+G0 X32.90451065 Y8.19200608
 
 ; PeckDrill: dwell
 G4 P0.5
 
 ; PeckDrill: move to start z
-G1 Z0.00000000
-G83 X13.9045106517 Y8.1920060767 Z-0.25 R0.0 Q0.03
+G1 Z0.01000000
+G83 X32.9045106517 Y8.1920060767 Z-0.25 R0.01 Q0.03
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.50000000
@@ -149,14 +149,14 @@ G0 Z0.50000000
 ; Begin PeckDrill
 ; ------------------------------------------------------------
 ; layers: ['4-40 Through Hole']
-; startZ: 0.0
+; startZ: 0.01
 ; startCond: minX
 ; stopZ: -0.25
 ; startDwell: 0.5
-; fileName: layout_single.dxf
+; fileName: layout_single_1.dxf
 ; safeZ: 0.5
 ; dxfTypes: ['CIRCLE']
-; centerX: 11.0025266131
+; centerX: 30.0025266131
 ; centerY: 9.81998958225
 ; stepZ: 0.03
 
@@ -164,14 +164,14 @@ G0 Z0.50000000
 G0 Z0.50000000
 
 ; PeckDrill: rapid move to drill x,y
-G0 X11.00252661 Y9.81998958
+G0 X30.00252661 Y9.81998958
 
 ; PeckDrill: dwell
 G4 P0.5
 
 ; PeckDrill: move to start z
-G1 Z0.00000000
-G83 X11.0025266131 Y9.81998958225 Z-0.25 R0.0 Q0.03
+G1 Z0.01000000
+G83 X30.0025266131 Y9.81998958225 Z-0.25 R0.01 Q0.03
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.50000000
@@ -183,14 +183,14 @@ G0 Z0.50000000
 ; Begin PeckDrill
 ; ------------------------------------------------------------
 ; layers: ['4-40 Through Hole']
-; startZ: 0.0
+; startZ: 0.01
 ; startCond: minX
 ; stopZ: -0.25
 ; startDwell: 0.5
-; fileName: layout_single.dxf
+; fileName: layout_single_1.dxf
 ; safeZ: 0.5
 ; dxfTypes: ['CIRCLE']
-; centerX: 9.75241856083
+; centerX: 28.7524185608
 ; centerY: 10.0199969525
 ; stepZ: 0.03
 
@@ -198,14 +198,14 @@ G0 Z0.50000000
 G0 Z0.50000000
 
 ; PeckDrill: rapid move to drill x,y
-G0 X9.75241856 Y10.01999695
+G0 X28.75241856 Y10.01999695
 
 ; PeckDrill: dwell
 G4 P0.5
 
 ; PeckDrill: move to start z
-G1 Z0.00000000
-G83 X9.75241856083 Y10.0199969525 Z-0.25 R0.0 Q0.03
+G1 Z0.01000000
+G83 X28.7524185608 Y10.0199969525 Z-0.25 R0.01 Q0.03
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.50000000
@@ -217,14 +217,14 @@ G0 Z0.50000000
 ; Begin PeckDrill
 ; ------------------------------------------------------------
 ; layers: ['4-40 Through Hole']
-; startZ: 0.0
+; startZ: 0.01
 ; startCond: minX
 ; stopZ: -0.25
 ; startDwell: 0.5
-; fileName: layout_single.dxf
+; fileName: layout_single_1.dxf
 ; safeZ: 0.5
 ; dxfTypes: ['CIRCLE']
-; centerX: 9.75244021926
+; centerX: 28.7524402193
 ; centerY: 15.62
 ; stepZ: 0.03
 
@@ -232,14 +232,14 @@ G0 Z0.50000000
 G0 Z0.50000000
 
 ; PeckDrill: rapid move to drill x,y
-G0 X9.75244022 Y15.62000000
+G0 X28.75244022 Y15.62000000
 
 ; PeckDrill: dwell
 G4 P0.5
 
 ; PeckDrill: move to start z
-G1 Z0.00000000
-G83 X9.75244021926 Y15.62 Z-0.25 R0.0 Q0.03
+G1 Z0.01000000
+G83 X28.7524402193 Y15.62 Z-0.25 R0.01 Q0.03
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.50000000
@@ -251,14 +251,14 @@ G0 Z0.50000000
 ; Begin PeckDrill
 ; ------------------------------------------------------------
 ; layers: ['4-40 Through Hole']
-; startZ: 0.0
+; startZ: 0.01
 ; startCond: minX
 ; stopZ: -0.25
 ; startDwell: 0.5
-; fileName: layout_single.dxf
+; fileName: layout_single_1.dxf
 ; safeZ: 0.5
 ; dxfTypes: ['CIRCLE']
-; centerX: 11.0025107635
+; centerX: 30.0025107635
 ; centerY: 16.2199966048
 ; stepZ: 0.03
 
@@ -266,14 +266,14 @@ G0 Z0.50000000
 G0 Z0.50000000
 
 ; PeckDrill: rapid move to drill x,y
-G0 X11.00251076 Y16.21999660
+G0 X30.00251076 Y16.21999660
 
 ; PeckDrill: dwell
 G4 P0.5
 
 ; PeckDrill: move to start z
-G1 Z0.00000000
-G83 X11.0025107635 Y16.2199966048 Z-0.25 R0.0 Q0.03
+G1 Z0.01000000
+G83 X30.0025107635 Y16.2199966048 Z-0.25 R0.01 Q0.03
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.50000000
