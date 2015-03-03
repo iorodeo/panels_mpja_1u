@@ -23,75 +23,7 @@ F 120.0
 ; convertArcs: True
 ; ptEquivTol: 1e-05
 ; layers: ['db25_hole']
-; depth: 0.12
-; safeZ: 0.3
-; dxfTypes: ['LINE', 'ARC']
-; closed: True
-; toolDiam: 0.125
-; pointList: too big
-
-; LineSegBoundaryXY: rapid move to safe z
-G0 Z0.30000000
-
-; LineSegBoundaryXY: rapid move to start x,y
-G0 X1.83020411 Y2.75075738
-
-; LineSegBoundaryXY: rapid move to cutterComp start move
-G0 X1.70520411 Y2.75075738
-G41.1 D0.125
-
-; LineSegBoundaryXY: rapid move to cutterComp start move
-G0 X1.83020411 Y2.75075738
-
-; LineSegBoundaryXY: dwell
-G4 P2.0
-
-; LineSegBoundaryXY: move to start z
-G1 Z0.00000000
-
-; LineSegBoundaryXY: LineSegPath 0
-G1 X1.83020411 Y2.75075738 Z0.00000000
-G1 X3.46520411 Y2.75075738 Z-0.04573427
-G1 X3.46520411 Y3.26075738 Z-0.06000000
-G1 X1.83020411 Y3.26075738 Z-0.10573427
-G1 X1.83020411 Y2.75075738 Z-0.12000000
-
-; LineSegBoundaryXY: LineSegPath 1
-G1 X1.83020411 Y2.75075738 Z-0.12000000
-G1 X3.46520411 Y2.75075738 Z-0.12000000
-G1 X3.46520411 Y3.26075738 Z-0.12000000
-G1 X1.83020411 Y3.26075738 Z-0.12000000
-G1 X1.83020411 Y2.75075738 Z-0.12000000
-G1 X1.89270411 Y2.75075738 Z-0.12000000
-
-; LineSegBoundaryXY: rapid move to safe z
-G0 Z0.30000000
-G40
-
-; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X2.01770411 Y2.75075738
-
-; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X1.89270411 Y2.75075738
-
-; End LineSegBoundaryXY
-; ------------------------------------------------------------
-
-
-; Begin LineSegBoundaryXY
-; ------------------------------------------------------------
-; startZ: 0.0
-; maxArcLen: 0.01
-; startCond: minX
-; cutterComp: left
-; startDwell: 2.0
-; direction: ccw
-; maxCutDepth: 0.12
-; fileName: db25_hole_plate_array.dxf
-; convertArcs: True
-; ptEquivTol: 1e-05
-; layers: ['db25_hole']
-; depth: 0.12
+; depth: 0.09
 ; safeZ: 0.3
 ; dxfTypes: ['LINE', 'ARC']
 ; closed: True
@@ -119,18 +51,18 @@ G1 Z0.00000000
 
 ; LineSegBoundaryXY: LineSegPath 0
 G1 X1.78605252 Y1.03988331 Z0.00000000
-G1 X3.42105252 Y1.03988331 Z-0.04573427
-G1 X3.42105252 Y1.54988331 Z-0.06000000
-G1 X1.78605252 Y1.54988331 Z-0.10573427
-G1 X1.78605252 Y1.03988331 Z-0.12000000
+G1 X3.42105252 Y1.03988331 Z-0.03430070
+G1 X3.42105252 Y1.54988331 Z-0.04500000
+G1 X1.78605252 Y1.54988331 Z-0.07930070
+G1 X1.78605252 Y1.03988331 Z-0.09000000
 
 ; LineSegBoundaryXY: LineSegPath 1
-G1 X1.78605252 Y1.03988331 Z-0.12000000
-G1 X3.42105252 Y1.03988331 Z-0.12000000
-G1 X3.42105252 Y1.54988331 Z-0.12000000
-G1 X1.78605252 Y1.54988331 Z-0.12000000
-G1 X1.78605252 Y1.03988331 Z-0.12000000
-G1 X1.84855252 Y1.03988331 Z-0.12000000
+G1 X1.78605252 Y1.03988331 Z-0.09000000
+G1 X3.42105252 Y1.03988331 Z-0.09000000
+G1 X3.42105252 Y1.54988331 Z-0.09000000
+G1 X1.78605252 Y1.54988331 Z-0.09000000
+G1 X1.78605252 Y1.03988331 Z-0.09000000
+G1 X1.84855252 Y1.03988331 Z-0.09000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.30000000
@@ -159,7 +91,7 @@ G0 X1.84855252 Y1.03988331
 ; convertArcs: True
 ; ptEquivTol: 1e-05
 ; layers: ['db25_hole']
-; depth: 0.12
+; depth: 0.09
 ; safeZ: 0.3
 ; dxfTypes: ['LINE', 'ARC']
 ; closed: True
@@ -170,14 +102,14 @@ G0 X1.84855252 Y1.03988331
 G0 Z0.30000000
 
 ; LineSegBoundaryXY: rapid move to start x,y
-G0 X5.58308915 Y2.77835212
+G0 X1.80750000 Y2.24500000
 
 ; LineSegBoundaryXY: rapid move to cutterComp start move
-G0 X5.45808915 Y2.77835212
+G0 X1.68250000 Y2.24500000
 G41.1 D0.125
 
 ; LineSegBoundaryXY: rapid move to cutterComp start move
-G0 X5.58308915 Y2.77835212
+G0 X1.80750000 Y2.24500000
 
 ; LineSegBoundaryXY: dwell
 G4 P2.0
@@ -186,29 +118,29 @@ G4 P2.0
 G1 Z0.00000000
 
 ; LineSegBoundaryXY: LineSegPath 0
-G1 X5.58308915 Y2.77835212 Z0.00000000
-G1 X7.21808915 Y2.77835212 Z-0.04573427
-G1 X7.21808915 Y3.28835212 Z-0.06000000
-G1 X5.58308915 Y3.28835212 Z-0.10573427
-G1 X5.58308915 Y2.77835212 Z-0.12000000
+G1 X1.80750000 Y2.24500000 Z0.00000000
+G1 X3.44250000 Y2.24500000 Z-0.03430070
+G1 X3.44250000 Y2.75500000 Z-0.04500000
+G1 X1.80750000 Y2.75500000 Z-0.07930070
+G1 X1.80750000 Y2.24500000 Z-0.09000000
 
 ; LineSegBoundaryXY: LineSegPath 1
-G1 X5.58308915 Y2.77835212 Z-0.12000000
-G1 X7.21808915 Y2.77835212 Z-0.12000000
-G1 X7.21808915 Y3.28835212 Z-0.12000000
-G1 X5.58308915 Y3.28835212 Z-0.12000000
-G1 X5.58308915 Y2.77835212 Z-0.12000000
-G1 X5.64558915 Y2.77835212 Z-0.12000000
+G1 X1.80750000 Y2.24500000 Z-0.09000000
+G1 X3.44250000 Y2.24500000 Z-0.09000000
+G1 X3.44250000 Y2.75500000 Z-0.09000000
+G1 X1.80750000 Y2.75500000 Z-0.09000000
+G1 X1.80750000 Y2.24500000 Z-0.09000000
+G1 X1.87000000 Y2.24500000 Z-0.09000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.30000000
 G40
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X5.77058915 Y2.77835212
+G0 X1.99500000 Y2.24500000
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X5.64558915 Y2.77835212
+G0 X1.87000000 Y2.24500000
 
 ; End LineSegBoundaryXY
 ; ------------------------------------------------------------
@@ -227,7 +159,7 @@ G0 X5.64558915 Y2.77835212
 ; convertArcs: True
 ; ptEquivTol: 1e-05
 ; layers: ['db25_hole']
-; depth: 0.12
+; depth: 0.09
 ; safeZ: 0.3
 ; dxfTypes: ['LINE', 'ARC']
 ; closed: True
@@ -238,14 +170,14 @@ G0 X5.64558915 Y2.77835212
 G0 Z0.30000000
 
 ; LineSegBoundaryXY: rapid move to start x,y
-G0 X5.53893756 Y1.06747806
+G0 X1.82894748 Y3.45011669
 
 ; LineSegBoundaryXY: rapid move to cutterComp start move
-G0 X5.41393756 Y1.06747806
+G0 X1.70394748 Y3.45011669
 G41.1 D0.125
 
 ; LineSegBoundaryXY: rapid move to cutterComp start move
-G0 X5.53893756 Y1.06747806
+G0 X1.82894748 Y3.45011669
 
 ; LineSegBoundaryXY: dwell
 G4 P2.0
@@ -254,29 +186,505 @@ G4 P2.0
 G1 Z0.00000000
 
 ; LineSegBoundaryXY: LineSegPath 0
-G1 X5.53893756 Y1.06747806 Z0.00000000
-G1 X7.17393756 Y1.06747806 Z-0.04573427
-G1 X7.17393756 Y1.57747806 Z-0.06000000
-G1 X5.53893756 Y1.57747806 Z-0.10573427
-G1 X5.53893756 Y1.06747806 Z-0.12000000
+G1 X1.82894748 Y3.45011669 Z0.00000000
+G1 X3.46394748 Y3.45011669 Z-0.03430070
+G1 X3.46394748 Y3.96011669 Z-0.04500000
+G1 X1.82894748 Y3.96011669 Z-0.07930070
+G1 X1.82894748 Y3.45011669 Z-0.09000000
 
 ; LineSegBoundaryXY: LineSegPath 1
-G1 X5.53893756 Y1.06747806 Z-0.12000000
-G1 X7.17393756 Y1.06747806 Z-0.12000000
-G1 X7.17393756 Y1.57747806 Z-0.12000000
-G1 X5.53893756 Y1.57747806 Z-0.12000000
-G1 X5.53893756 Y1.06747806 Z-0.12000000
-G1 X5.60143756 Y1.06747806 Z-0.12000000
+G1 X1.82894748 Y3.45011669 Z-0.09000000
+G1 X3.46394748 Y3.45011669 Z-0.09000000
+G1 X3.46394748 Y3.96011669 Z-0.09000000
+G1 X1.82894748 Y3.96011669 Z-0.09000000
+G1 X1.82894748 Y3.45011669 Z-0.09000000
+G1 X1.89144748 Y3.45011669 Z-0.09000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.30000000
 G40
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X5.72643756 Y1.06747806
+G0 X2.01644748 Y3.45011669
 
 ; LineSegBoundaryXY: rapid move to cancel cutter comp move
-G0 X5.60143756 Y1.06747806
+G0 X1.89144748 Y3.45011669
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.12
+; fileName: db25_hole_plate_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['db25_hole']
+; depth: 0.09
+; safeZ: 0.3
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X1.85039497 Y4.65523337
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.72539497 Y4.65523337
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.85039497 Y4.65523337
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X1.85039497 Y4.65523337 Z0.00000000
+G1 X3.48539497 Y4.65523337 Z-0.03430070
+G1 X3.48539497 Y5.16523337 Z-0.04500000
+G1 X1.85039497 Y5.16523337 Z-0.07930070
+G1 X1.85039497 Y4.65523337 Z-0.09000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X1.85039497 Y4.65523337 Z-0.09000000
+G1 X3.48539497 Y4.65523337 Z-0.09000000
+G1 X3.48539497 Y5.16523337 Z-0.09000000
+G1 X1.85039497 Y5.16523337 Z-0.09000000
+G1 X1.85039497 Y4.65523337 Z-0.09000000
+G1 X1.91289497 Y4.65523337 Z-0.09000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X2.03789497 Y4.65523337
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X1.91289497 Y4.65523337
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.12
+; fileName: db25_hole_plate_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['db25_hole']
+; depth: 0.09
+; safeZ: 0.3
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X1.87184245 Y5.86035006
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.74684245 Y5.86035006
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.87184245 Y5.86035006
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X1.87184245 Y5.86035006 Z0.00000000
+G1 X3.50684245 Y5.86035006 Z-0.03430070
+G1 X3.50684245 Y6.37035006 Z-0.04500000
+G1 X1.87184245 Y6.37035006 Z-0.07930070
+G1 X1.87184245 Y5.86035006 Z-0.09000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X1.87184245 Y5.86035006 Z-0.09000000
+G1 X3.50684245 Y5.86035006 Z-0.09000000
+G1 X3.50684245 Y6.37035006 Z-0.09000000
+G1 X1.87184245 Y6.37035006 Z-0.09000000
+G1 X1.87184245 Y5.86035006 Z-0.09000000
+G1 X1.93434245 Y5.86035006 Z-0.09000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X2.05934245 Y5.86035006
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X1.93434245 Y5.86035006
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.12
+; fileName: db25_hole_plate_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['db25_hole']
+; depth: 0.09
+; safeZ: 0.3
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X4.68605252 Y1.03988331
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.56105252 Y1.03988331
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.68605252 Y1.03988331
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X4.68605252 Y1.03988331 Z0.00000000
+G1 X6.32105252 Y1.03988331 Z-0.03430070
+G1 X6.32105252 Y1.54988331 Z-0.04500000
+G1 X4.68605252 Y1.54988331 Z-0.07930070
+G1 X4.68605252 Y1.03988331 Z-0.09000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X4.68605252 Y1.03988331 Z-0.09000000
+G1 X6.32105252 Y1.03988331 Z-0.09000000
+G1 X6.32105252 Y1.54988331 Z-0.09000000
+G1 X4.68605252 Y1.54988331 Z-0.09000000
+G1 X4.68605252 Y1.03988331 Z-0.09000000
+G1 X4.74855252 Y1.03988331 Z-0.09000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.87355252 Y1.03988331
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.74855252 Y1.03988331
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.12
+; fileName: db25_hole_plate_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['db25_hole']
+; depth: 0.09
+; safeZ: 0.3
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X4.70750000 Y2.24500000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.58250000 Y2.24500000
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.70750000 Y2.24500000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X4.70750000 Y2.24500000 Z0.00000000
+G1 X6.34250000 Y2.24500000 Z-0.03430070
+G1 X6.34250000 Y2.75500000 Z-0.04500000
+G1 X4.70750000 Y2.75500000 Z-0.07930070
+G1 X4.70750000 Y2.24500000 Z-0.09000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X4.70750000 Y2.24500000 Z-0.09000000
+G1 X6.34250000 Y2.24500000 Z-0.09000000
+G1 X6.34250000 Y2.75500000 Z-0.09000000
+G1 X4.70750000 Y2.75500000 Z-0.09000000
+G1 X4.70750000 Y2.24500000 Z-0.09000000
+G1 X4.77000000 Y2.24500000 Z-0.09000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.89500000 Y2.24500000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.77000000 Y2.24500000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.12
+; fileName: db25_hole_plate_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['db25_hole']
+; depth: 0.09
+; safeZ: 0.3
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X4.72894748 Y3.45011669
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.60394748 Y3.45011669
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.72894748 Y3.45011669
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X4.72894748 Y3.45011669 Z0.00000000
+G1 X6.36394748 Y3.45011669 Z-0.03430070
+G1 X6.36394748 Y3.96011669 Z-0.04500000
+G1 X4.72894748 Y3.96011669 Z-0.07930070
+G1 X4.72894748 Y3.45011669 Z-0.09000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X4.72894748 Y3.45011669 Z-0.09000000
+G1 X6.36394748 Y3.45011669 Z-0.09000000
+G1 X6.36394748 Y3.96011669 Z-0.09000000
+G1 X4.72894748 Y3.96011669 Z-0.09000000
+G1 X4.72894748 Y3.45011669 Z-0.09000000
+G1 X4.79144748 Y3.45011669 Z-0.09000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.91644748 Y3.45011669
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.79144748 Y3.45011669
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.12
+; fileName: db25_hole_plate_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['db25_hole']
+; depth: 0.09
+; safeZ: 0.3
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X4.75039497 Y4.65523337
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.62539497 Y4.65523337
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.75039497 Y4.65523337
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X4.75039497 Y4.65523337 Z0.00000000
+G1 X6.38539497 Y4.65523337 Z-0.03430070
+G1 X6.38539497 Y5.16523337 Z-0.04500000
+G1 X4.75039497 Y5.16523337 Z-0.07930070
+G1 X4.75039497 Y4.65523337 Z-0.09000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X4.75039497 Y4.65523337 Z-0.09000000
+G1 X6.38539497 Y4.65523337 Z-0.09000000
+G1 X6.38539497 Y5.16523337 Z-0.09000000
+G1 X4.75039497 Y5.16523337 Z-0.09000000
+G1 X4.75039497 Y4.65523337 Z-0.09000000
+G1 X4.81289497 Y4.65523337 Z-0.09000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.93789497 Y4.65523337
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.81289497 Y4.65523337
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.12
+; fileName: db25_hole_plate_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['db25_hole']
+; depth: 0.09
+; safeZ: 0.3
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X4.77184245 Y5.86035006
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.64684245 Y5.86035006
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.77184245 Y5.86035006
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X4.77184245 Y5.86035006 Z0.00000000
+G1 X6.40684245 Y5.86035006 Z-0.03430070
+G1 X6.40684245 Y6.37035006 Z-0.04500000
+G1 X4.77184245 Y6.37035006 Z-0.07930070
+G1 X4.77184245 Y5.86035006 Z-0.09000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X4.77184245 Y5.86035006 Z-0.09000000
+G1 X6.40684245 Y5.86035006 Z-0.09000000
+G1 X6.40684245 Y6.37035006 Z-0.09000000
+G1 X4.77184245 Y6.37035006 Z-0.09000000
+G1 X4.77184245 Y5.86035006 Z-0.09000000
+G1 X4.83434245 Y5.86035006 Z-0.09000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.30000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.95934245 Y5.86035006
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.83434245 Y5.86035006
 
 ; End LineSegBoundaryXY
 ; ------------------------------------------------------------

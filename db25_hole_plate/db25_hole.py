@@ -17,7 +17,7 @@ layerNames = ['db25_hole']
 param = {
         'fileName'    : fileName,
         'layers'      : layerNames,
-        'depth'       : 0.12,
+        'depth'       : 0.09,
         'startZ'      : 0.0,
         'safeZ'       : 0.3,
         'toolDiam'    : 0.125,

@@ -12,12 +12,13 @@ prog = gcode_cmd.GCodeProg()
 prog.add(gcode_cmd.GenericStart())
 prog.add(gcode_cmd.Space())
 prog.add(gcode_cmd.FeedRate(feedrate))
+prog.add(gcode_cmd.PathBlendMode(p=0.02,q=0.01))
 
 layerNames = ['boundary']
 param = {
         'fileName'    : fileName,
         'layers'      : layerNames,
-        'depth'       : 0.12,
+        'depth'       : 0.09,
         'startZ'      : 0.0,
         'safeZ'       : 0.3,
         'toolDiam'    : 0.125,
@@ -31,8 +32,11 @@ param = {
         }
 boundary = cnc_dxf.DxfBoundary(param)
 prog.add(boundary)
-
 prog.add(gcode_cmd.Space())
+
+prog.add(gcode_cmd.ExactPathMode())
+prog.add(gcode_cmd.Space())
+
 prog.add(gcode_cmd.End(),comment=True)
 baseName, dummy = os.path.splitext(__file__)
 fileName = '{0}.ngc'.format(baseName)
