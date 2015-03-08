@@ -26,20 +26,23 @@ feedrate = 36 "/min
 """
 testCut = False 
 
-feedrate = 85.0
-#fileName = 'layout.dxf'
-fileName = 'layout_single_1_tmp.dxf'
+#feedrate = 80.0
+feedrate = 40.0
+fileName = 'layout.dxf'
+#fileName = 'layout_single_1_tmp.dxf'
 
 if testCut:
     depth = 0.02
     toolDiam = 0.001
 else:
     depth = 0.2
-    toolDiam = 0.125 
+    #toolDiam = 0.125 
+    toolDiam = 0.25 
 
 startZ = 0.0
 safeZ = 0.5
-maxCutDepth = 0.03
+maxCutDepth = 0.05
+#maxCutDepth = 0.03
 direction = 'ccw'
 cutterComp = 'inside'
 overlap = 0.4
@@ -83,6 +86,27 @@ param = {
         'startDwell'  : startDwell, 
         'overlap'     : overlap,
         'cornerCut'   : False,
+        'startCond'   : startCond,
+        }
+if testCut:
+    cut = cnc_dxf.DxfBoundary(param)
+else:
+    cut = cnc_dxf.DxfRectPocketFromExtent(param)
+prog.add(cut)
+
+param = {
+        'fileName'    : fileName,
+        'layers'      : ['Cutout With Corner'],
+        'depth'       : depth,
+        'startZ'      : startZ,
+        'safeZ'       : safeZ,
+        'toolDiam'    : toolDiam,
+        'direction'   : direction,
+        'cutterComp'  : cutterComp,
+        'maxCutDepth' : maxCutDepth,
+        'startDwell'  : startDwell, 
+        'overlap'     : overlap,
+        'cornerCut'   : True,
         'startCond'   : startCond,
         }
 if testCut:

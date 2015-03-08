@@ -1,0 +1,2 @@
+Modified layout.dxf (in this directory) so that cutout can be done with 0.25"
+end mill.  If it works need to back port this to other dxf files.
