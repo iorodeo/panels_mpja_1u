@@ -25,7 +25,7 @@ if testCut:
     stopZ = startZ - 0.05
 else:
     stopZ = -0.25
-safeZ = 0.5
+safeZ = 0.75
 stepZ = 0.03
 startDwell = 0.5
 

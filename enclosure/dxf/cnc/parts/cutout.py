@@ -27,7 +27,7 @@ feedrate = 36 "/min
 testCut = False 
 
 #feedrate = 80.0
-feedrate = 40.0
+feedrate = 45.0
 fileName = 'layout.dxf'
 #fileName = 'layout_single_1_tmp.dxf'
 
@@ -40,7 +40,7 @@ else:
     toolDiam = 0.25 
 
 startZ = 0.0
-safeZ = 0.5
+safeZ = 0.75
 maxCutDepth = 0.05
 #maxCutDepth = 0.03
 direction = 'ccw'

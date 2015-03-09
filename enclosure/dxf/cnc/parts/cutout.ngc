@@ -8,7 +8,7 @@ G90 (Set absolute distance mode)
 G20 (Set units to inches)
 G61 (Exact path mode)
 
-F 40.0
+F 45.0
 
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
@@ -19,7 +19,7 @@ F 40.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.218500613921
 ; dxfTypes: ['CIRCLE']
@@ -29,7 +29,7 @@ F 40.0
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X3.76550355 Y4.07751969
@@ -81,7 +81,7 @@ G3 X3.76550355 Y4.07751969 I-0.09350061 J0.00000000
 G1 X3.67200293 Y4.07751969
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -96,7 +96,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265754445816
 ; dxfTypes: ['CIRCLE']
@@ -106,7 +106,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01564611 Y2.12999684
@@ -158,7 +158,7 @@ G3 X7.01564611 Y2.12999684 I-0.14075445 J0.00000000
 G1 X6.87489166 Y2.12999684
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -173,7 +173,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265739101021
 ; dxfTypes: ['CIRCLE']
@@ -183,7 +183,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01563743 Y2.93001582
@@ -235,7 +235,7 @@ G3 X7.01563743 Y2.93001582 I-0.14073910 J0.00000000
 G1 X6.87489833 Y2.93001582
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -250,7 +250,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265759184349
 ; dxfTypes: ['CIRCLE']
@@ -260,7 +260,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01564373 Y3.72999731
@@ -312,7 +312,7 @@ G3 X7.01564373 Y3.72999731 I-0.14075918 J0.00000000
 G1 X6.87488454 Y3.72999731
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -327,7 +327,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265751930664
 ; dxfTypes: ['CIRCLE']
@@ -337,7 +337,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01564442 Y4.52999717
@@ -389,7 +389,7 @@ G3 X7.01564442 Y4.52999717 I-0.14075193 J0.00000000
 G1 X6.87489249 Y4.52999717
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -404,7 +404,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265748450441
 ; dxfTypes: ['CIRCLE']
@@ -414,7 +414,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01562540 Y5.32999958
@@ -466,7 +466,7 @@ G3 X7.01562540 Y5.32999958 I-0.14074845 J0.00000000
 G1 X6.87487695 Y5.32999958
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -481,7 +481,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265738117019
 ; dxfTypes: ['CIRCLE']
@@ -491,7 +491,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01563811 Y6.12998340
@@ -543,7 +543,7 @@ G3 X7.01563811 Y6.12998340 I-0.14073812 J0.00000000
 G1 X6.87489999 Y6.12998340
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -558,7 +558,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.26574345744
 ; dxfTypes: ['CIRCLE']
@@ -568,7 +568,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01562659 Y6.93000000
@@ -620,7 +620,7 @@ G3 X7.01562659 Y6.93000000 I-0.14074346 J0.00000000
 G1 X6.87488313 Y6.93000000
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -635,7 +635,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265750416763
 ; dxfTypes: ['CIRCLE']
@@ -645,7 +645,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01564285 Y7.73000081
@@ -697,7 +697,7 @@ G3 X7.01564285 Y7.73000081 I-0.14075042 J0.00000000
 G1 X6.87489244 Y7.73000081
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -712,7 +712,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265753978674
 ; dxfTypes: ['CIRCLE']
@@ -722,7 +722,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01564456 Y8.53000399
@@ -774,7 +774,7 @@ G3 X7.01564456 Y8.53000399 I-0.14075398 J0.00000000
 G1 X6.87489058 Y8.53000399
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -789,7 +789,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.26575134844
 ; dxfTypes: ['CIRCLE']
@@ -799,7 +799,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X7.01564376 Y9.33000688
@@ -851,7 +851,7 @@ G3 X7.01564376 Y9.33000688 I-0.14075135 J0.00000000
 G1 X6.87489241 Y9.33000688
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -866,7 +866,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.218500613921
 ; dxfTypes: ['CIRCLE']
@@ -876,7 +876,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X22.76550355 Y4.07751969
@@ -928,7 +928,7 @@ G3 X22.76550355 Y4.07751969 I-0.09350061 J0.00000000
 G1 X22.67200293 Y4.07751969
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -943,7 +943,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265754445816
 ; dxfTypes: ['CIRCLE']
@@ -953,7 +953,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01564611 Y2.12999684
@@ -1005,7 +1005,7 @@ G3 X26.01564611 Y2.12999684 I-0.14075445 J0.00000000
 G1 X25.87489166 Y2.12999684
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1020,7 +1020,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265739101021
 ; dxfTypes: ['CIRCLE']
@@ -1030,7 +1030,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01563743 Y2.93001582
@@ -1082,7 +1082,7 @@ G3 X26.01563743 Y2.93001582 I-0.14073910 J0.00000000
 G1 X25.87489833 Y2.93001582
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1097,7 +1097,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265759184349
 ; dxfTypes: ['CIRCLE']
@@ -1107,7 +1107,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01564373 Y3.72999731
@@ -1159,7 +1159,7 @@ G3 X26.01564373 Y3.72999731 I-0.14075918 J0.00000000
 G1 X25.87488454 Y3.72999731
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1174,7 +1174,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265751930664
 ; dxfTypes: ['CIRCLE']
@@ -1184,7 +1184,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01564442 Y4.52999717
@@ -1236,7 +1236,7 @@ G3 X26.01564442 Y4.52999717 I-0.14075193 J0.00000000
 G1 X25.87489249 Y4.52999717
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1251,7 +1251,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265748450441
 ; dxfTypes: ['CIRCLE']
@@ -1261,7 +1261,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01562540 Y5.32999958
@@ -1313,7 +1313,7 @@ G3 X26.01562540 Y5.32999958 I-0.14074845 J0.00000000
 G1 X25.87487695 Y5.32999958
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1328,7 +1328,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265738117019
 ; dxfTypes: ['CIRCLE']
@@ -1338,7 +1338,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01563811 Y6.12998340
@@ -1390,7 +1390,7 @@ G3 X26.01563811 Y6.12998340 I-0.14073812 J0.00000000
 G1 X25.87489999 Y6.12998340
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1405,7 +1405,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.26574345744
 ; dxfTypes: ['CIRCLE']
@@ -1415,7 +1415,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01562659 Y6.93000000
@@ -1467,7 +1467,7 @@ G3 X26.01562659 Y6.93000000 I-0.14074346 J0.00000000
 G1 X25.87488313 Y6.93000000
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1482,7 +1482,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265750416763
 ; dxfTypes: ['CIRCLE']
@@ -1492,7 +1492,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01564285 Y7.73000081
@@ -1544,7 +1544,7 @@ G3 X26.01564285 Y7.73000081 I-0.14075042 J0.00000000
 G1 X25.87489244 Y7.73000081
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1559,7 +1559,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.265753978674
 ; dxfTypes: ['CIRCLE']
@@ -1569,7 +1569,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01564456 Y8.53000399
@@ -1621,7 +1621,7 @@ G3 X26.01564456 Y8.53000399 I-0.14075398 J0.00000000
 G1 X25.87489058 Y8.53000399
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1636,7 +1636,7 @@ G0 Z0.50000000
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.5
+; safeZ: 0.75
 ; depth: 0.2
 ; radius: 0.26575134844
 ; dxfTypes: ['CIRCLE']
@@ -1646,7 +1646,7 @@ G0 Z0.50000000
 ; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; CircPocketXY: rapid move to start x,y
 G0 X26.01564376 Y9.33000688
@@ -1698,7 +1698,7 @@ G3 X26.01564376 Y9.33000688 I-0.14075135 J0.00000000
 G1 X25.87489241 Y9.33000688
 
 ; CircPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End CircPocketXY
 ; ------------------------------------------------------------
@@ -1721,14 +1721,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 1.32503937008
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 6.87
 ; centerY: 10.21
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X6.33248031 Y10.33500000
@@ -1816,7 +1816,7 @@ G1 X7.25751969 Y10.21000000
 G1 X6.48248031 Y10.21000000
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -1839,14 +1839,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 1.32503937
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 25.87
 ; centerY: 10.21
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X25.33248032 Y10.33500000
@@ -1934,7 +1934,7 @@ G1 X26.25751969 Y10.21000000
 G1 X25.48248032 Y10.21000000
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -1957,14 +1957,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.28937007874
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 7.03334645669
 ; centerY: 11.65
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X7.01366142 Y11.74724409
@@ -2052,7 +2052,7 @@ G1 X7.03334646 Y11.70787402
 G1 X7.03334646 Y11.70787402
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -2075,14 +2075,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.51968503937
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 6.96149606299
 ; centerY: 12.31
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X6.82665354 Y12.46452756
@@ -2170,7 +2170,7 @@ G1 X6.96149606 Y12.31452756
 G1 X6.96149606 Y12.31452756
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -2193,14 +2193,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.57874015748
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 6.93196850394
 ; centerY: 13.609015748
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X6.76759843 Y14.13755906
@@ -2308,7 +2308,7 @@ G1 X6.93196850 Y13.83755906
 G1 X6.93196850 Y13.83755906
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -2331,14 +2331,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.2893700788
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 26.0333464567
 ; centerY: 11.65
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X26.01366142 Y11.74724409
@@ -2426,7 +2426,7 @@ G1 X26.03334646 Y11.70787402
 G1 X26.03334646 Y11.70787402
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -2449,14 +2449,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.5196850394
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 25.961496063
 ; centerY: 12.31
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X25.82665354 Y12.46452756
@@ -2544,7 +2544,7 @@ G1 X25.96149606 Y12.31452756
 G1 X25.96149606 Y12.31452756
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -2567,14 +2567,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.5787401575
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 25.9319685039
 ; centerY: 13.609015748
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X25.76759843 Y14.13755906
@@ -2682,7 +2682,7 @@ G1 X25.93196850 Y13.83755906
 G1 X25.93196850 Y13.83755906
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -2705,14 +2705,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.28937007874
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 7.03334645669
 ; centerY: 16.57
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X7.01366142 Y16.88929134
@@ -2800,7 +2800,7 @@ G1 X7.03334646 Y16.84992126
 G1 X7.03334646 Y16.84992126
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -2823,14 +2823,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.54330708662
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 6.87
 ; centerY: 17.45
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X6.72334646 Y17.50610236
@@ -2918,7 +2918,7 @@ G1 X6.90444882 Y17.45000000
 G1 X6.83555118 Y17.45000000
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -2941,14 +2941,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.2893700788
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 26.0333464567
 ; centerY: 16.57
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X26.01366142 Y16.88929134
@@ -3036,7 +3036,7 @@ G1 X26.03334646 Y16.84992126
 G1 X26.03334646 Y16.84992126
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -3059,14 +3059,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.5433070866
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 25.87
 ; centerY: 17.45
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X25.72334646 Y17.50610236
@@ -3154,7 +3154,7 @@ G1 X25.90444882 Y17.45000000
 G1 X25.83555118 Y17.45000000
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -3177,14 +3177,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.28937
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 7.033345
 ; centerY: 10.85
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X7.01366000 Y10.85120000
@@ -3272,7 +3272,7 @@ G1 X7.05063000 Y10.85000000
 G1 X7.01606000 Y10.85000000
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -3295,14 +3295,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.2893
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 26.03335
 ; centerY: 10.85
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X26.01370000 Y10.85120000
@@ -3390,7 +3390,7 @@ G1 X26.05060000 Y10.85000000
 G1 X26.01610000 Y10.85000000
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -3413,14 +3413,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.27
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 7.115
 ; centerY: 15.37
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X7.10500000 Y15.84500000
@@ -3508,7 +3508,7 @@ G1 X7.11500000 Y15.82500000
 G1 X7.11500000 Y15.82500000
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -3531,14 +3531,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: False
 ; width: 0.27
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 26.115
 ; centerY: 15.37
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X26.10500000 Y15.84500000
@@ -3626,7 +3626,7 @@ G1 X26.11500000 Y15.82500000
 G1 X26.11500000 Y15.82500000
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -3649,14 +3649,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: True
 ; width: 0.53543307087
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 3.67200787402
 ; centerY: 12.2075196851
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X3.52929134 Y12.88960630
@@ -3776,7 +3776,7 @@ G1 X3.67200787 Y12.73960630
 G1 X3.67200787 Y12.73960630
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
@@ -3799,14 +3799,14 @@ G0 Z0.50000000
 ; overlap: 0.4
 ; cornerCut: True
 ; width: 0.5354330708
-; safeZ: 0.5
+; safeZ: 0.75
 ; dxfTypes: ['LINE', 'POINT']
 ; centerX: 22.672007874
 ; centerY: 12.2075196851
 ; toolDiam: 0.25
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; RectPocketXY: rapid move to start x,y
 G0 X22.52929134 Y12.88960630
@@ -3926,7 +3926,7 @@ G1 X22.67200787 Y12.73960630
 G1 X22.67200787 Y12.73960630
 
 ; RectPocketXY: rapid move to safe z
-G0 Z0.50000000
+G0 Z0.75000000
 
 ; End RectPocketXY
 ; ------------------------------------------------------------
