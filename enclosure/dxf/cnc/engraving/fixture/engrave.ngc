@@ -1,0 +1,67 @@
+
+; Generic Start
+G40 (Cancel cutter radius compensation)
+G49 (Cancel tool length offset)
+G80 (Cancel canned cycle)
+G54 (Select coordinate system 1)
+G90 (Set absolute distance mode)
+G20 (Set units to inches)
+G61 (Exact path mode)
+
+
+; Setup laser
+F 12.0
+M65 P1
+S 600.0
+M3
+G4 P3.0
+
+; Begin LaserLineSegPath
+; ------------------------------------------------------------
+; maxArcLen: 0.01
+; startCond: minX
+; returnHome: True
+; startDwell: 3.0
+; direction: ccw
+; fileName: engrave.dxf
+; convertArcs: True
+; ptEquivTol: 0.0004
+; layers: ['Laser Fixture Pocket']
+; feedRate: 12
+; closed: True
+; laserHomeXY: (35, 23)
+; dxfTypes: ['LINE', 'ARC']
+; laserPower: 600
+; laserDIOPin: 1
+; pointList: too big
+
+; LaserLineSegPath: rapid move to start x,y
+G0 X2.19750000 Y0.62000000
+G64 p0.001 q0.001
+
+; Laser on
+M62 P1
+G1 X2.19750000 Y0.62000000
+G1 X17.82250000 Y0.62000000
+G1 X17.82250000 Y2.12000000
+G1 X2.19750000 Y2.12000000
+G1 X2.19750000 Y0.62000000
+G1 X2.19750000 Y0.62000000
+
+; Laser off
+M65 P1
+G61
+
+; End LaserLineSegPath
+; ------------------------------------------------------------
+
+
+; Shutdown laser
+M65 P1
+M5
+S 0.0
+
+; VectorCut: rapid move to {'y': 23, 'x': 35}
+G0 X35.00000000 Y23.00000000
+
+M2 (End program)
