@@ -10,9 +10,9 @@ G61 (Exact path mode)
 
 
 ; Setup laser
-F 80.0
+F 40.0
 M65 P1
-S 300.0
+S 600.0
 M3
 G4 P3.0
 
