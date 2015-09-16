@@ -10,7 +10,7 @@ G61 (Exact path mode)
 
 
 ; Setup laser
-F 12.0
+F 10.0
 M65 P1
 S 600.0
 M3
@@ -27,7 +27,7 @@ G4 P3.0
 ; convertArcs: True
 ; ptEquivTol: 0.0004
 ; layers: ['Laser Fixture Pocket']
-; feedRate: 12
+; feedRate: 10
 ; closed: True
 ; laserHomeXY: (35, 23)
 ; dxfTypes: ['LINE', 'ARC']

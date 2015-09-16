@@ -1,5 +1,5 @@
 999
-dxfrw 0.5.10
+dxfrw 0.5.11
 0
 SECTION
 2
@@ -67,7 +67,7 @@ STANDARD
 9
 $CLAYER
 8
-Engrave
+0
 9
 $DIMASZ
 40
@@ -229,9 +229,9 @@ AcDbViewportTableRecord
 21
 1
 12
-5.38894969535
+11.2347641178
 22
-2.42763556641
+1.31346897149
 13
 0
 23
@@ -257,9 +257,9 @@ AcDbViewportTableRecord
 37
 0
 40
-6.11523405489
+3.1309998361
 41
-1.81102362205
+2.5866873065
 42
 50
 43
@@ -1253,11 +1253,13 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
 2
-Reference
+Engrave
 70
 0
 62
-7
+30
+420
+16744448
 6
 CONTINUOUS
 370
@@ -1275,13 +1277,13 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
 2
-Engrave
+Laser Fixture Pocket
 70
 0
 62
-30
+16
 420
-16744448
+8388608
 6
 CONTINUOUS
 370
@@ -1299,11 +1301,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
 2
-tmp
+Reference
 70
 0
 62
-1
+7
 6
 CONTINUOUS
 370
@@ -1321,13 +1323,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
 2
-Laser Fixture Pocket
+tmp
 70
 0
 62
-16
-420
-8388608
+1
 6
 CONTINUOUS
 370
