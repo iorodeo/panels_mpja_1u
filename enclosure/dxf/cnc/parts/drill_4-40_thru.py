@@ -18,8 +18,8 @@ Notes
 testCut = False 
 
 feedrate = 24.0
-#fileName = 'layout.dxf'
-fileName = 'layout_single_0.dxf'
+fileName = 'layout.dxf'
+#fileName = 'layout_single_0.dxf'
 startZ = 0.01
 if testCut:
     stopZ = startZ - 0.05
