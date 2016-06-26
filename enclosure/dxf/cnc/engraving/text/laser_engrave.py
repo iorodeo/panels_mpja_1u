@@ -4,7 +4,7 @@ from py2gcode import gcode_cmd
 from py2gcode import cnc_laser
 
 dxfFileName = sys.argv[1]
-numPass = 5
+numPass = 12 
 
 prog = gcode_cmd.GCodeProg()
 prog.add(gcode_cmd.GenericStart())
