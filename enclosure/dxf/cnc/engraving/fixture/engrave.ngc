@@ -10,7 +10,7 @@ G61 (Exact path mode)
 
 
 ; Setup laser
-F 10.0
+F 25.0
 M65 P1
 S 600.0
 M3
@@ -26,8 +26,8 @@ G4 P3.0
 ; fileName: engrave.dxf
 ; convertArcs: True
 ; ptEquivTol: 0.0004
-; layers: ['Laser Fixture Pocket']
-; feedRate: 10
+; layers: ['adjustment']
+; feedRate: 25
 ; closed: True
 ; laserHomeXY: (35, 23)
 ; dxfTypes: ['LINE', 'ARC']
@@ -36,17 +36,17 @@ G4 P3.0
 ; pointList: too big
 
 ; LaserLineSegPath: rapid move to start x,y
-G0 X2.19750000 Y0.62000000
+G0 X17.82250000 Y0.62000000
 G64 p0.001 q0.001
 
 ; Laser on
 M62 P1
-G1 X2.19750000 Y0.62000000
 G1 X17.82250000 Y0.62000000
+G1 X17.87250000 Y0.62000000
+G1 X17.87250000 Y2.12000000
 G1 X17.82250000 Y2.12000000
-G1 X2.19750000 Y2.12000000
-G1 X2.19750000 Y0.62000000
-G1 X2.19750000 Y0.62000000
+G1 X17.82250000 Y0.62000000
+G1 X17.82250000 Y0.62000000
 
 ; Laser off
 M65 P1

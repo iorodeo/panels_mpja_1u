@@ -12,11 +12,12 @@ prog.add(gcode_cmd.Space())
 
 param = {
         'fileName'    :  dxfFileName,
-        'layers'      :  ['Laser Fixture Pocket'],
-        #'layers'      :  ['adjustment'],
+        #'layers'      :  ['Laser Fixture Pocket'],
+        'layers'      :  ['adjustment'],
         'dxfTypes'    :  ['LINE','ARC'],
         'laserPower'  :  600,
-        'feedRate'    :  10,
+        #'feedRate'    :  10,
+        'feedRate'    :  25,
         'convertArcs' :  True,
         'startCond'   : 'minX',
         'direction'   : 'ccw',
