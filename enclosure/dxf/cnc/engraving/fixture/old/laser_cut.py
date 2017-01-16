@@ -4,16 +4,6 @@ import os
 from py2gcode import gcode_cmd
 from py2gcode import cnc_laser
 
-material = '3mm'
-if material == '6mm':
-    feedRate = 10
-elif material == '3mm':
-    feedRate = 25
-else:
-    print('uknown material selection: {0}'.format(material))
-    sys.exit(1)
-    
-
 dxfFileName = sys.argv[1]
 
 prog = gcode_cmd.GCodeProg()
@@ -22,10 +12,12 @@ prog.add(gcode_cmd.Space())
 
 param = {
         'fileName'    :  dxfFileName,
-        'layers'      :  ['Laser Fixture Pocket'],
+        #'layers'      :  ['Laser Fixture Pocket'],
+        'layers'      :  ['adjustment'],
         'dxfTypes'    :  ['LINE','ARC'],
         'laserPower'  :  600,
-        'feedRate'    :  feedRate,
+        #'feedRate'    :  10,
+        'feedRate'    :  25,
         'convertArcs' :  True,
         'startCond'   : 'minX',
         'direction'   : 'ccw',
