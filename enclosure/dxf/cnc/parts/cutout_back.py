@@ -57,7 +57,7 @@ prog.add(gcode_cmd.FeedRate(feedrate))
 
 param = {
         'fileName'     : fileName,
-        'layers'       : ['DC Jack Hole'], 
+        'layers'       : ['DC Jack Hole','prepockets'], 
         'depth'        : depth,
         'startZ'       : startZ,
         'safeZ'        : safeZ,
@@ -67,6 +67,7 @@ param = {
         'maxCutDepth'  : maxCutDepth,
         'overlap'      : overlap,
         'startDwell'   : startDwell,
+        'coolingPause' : coolingPause,
         }
 if testCut:
     cut = cnc_dxf.DxfCircBoundary(param)

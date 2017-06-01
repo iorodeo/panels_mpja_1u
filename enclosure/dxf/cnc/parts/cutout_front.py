@@ -40,6 +40,7 @@ cutterComp = 'inside'
 overlap = 0.4
 startDwell = 1.0
 startCond = 'minX'
+coolingPause = 4.0
 
 prog = gcode_cmd.GCodeProg()
 prog.add(gcode_cmd.GenericStart())
@@ -58,6 +59,7 @@ param = {
         'maxCutDepth'  : maxCutDepth,
         'overlap'      : overlap,
         'startDwell'   : startDwell,
+        'coolingPause' : coolingPause,
         }
 if testCut:
     cut = cnc_dxf.DxfCircBoundary(param)
@@ -66,19 +68,20 @@ else:
 prog.add(cut)
 
 param = {
-        'fileName'    : fileName,
-        'layers'      : ['Cutout'],
-        'depth'       : depth,
-        'startZ'      : startZ,
-        'safeZ'       : safeZ,
-        'toolDiam'    : toolDiam,
-        'direction'   : direction,
-        'cutterComp'  : cutterComp,
-        'maxCutDepth' : maxCutDepth,
-        'startDwell'  : startDwell, 
-        'overlap'     : overlap,
-        'cornerCut'   : False,
-        'startCond'   : startCond,
+        'fileName'     : fileName,
+        'layers'       : ['Cutout'],
+        'depth'        : depth,
+        'startZ'       : startZ,
+        'safeZ'        : safeZ,
+        'toolDiam'     : toolDiam,
+        'direction'    : direction,
+        'cutterComp'   : cutterComp,
+        'maxCutDepth'  : maxCutDepth,
+        'startDwell'   : startDwell, 
+        'overlap'      : overlap,
+        'cornerCut'    : False,
+        'startCond'    : startCond,
+        'coolingPause' : coolingPause,
         }
 if testCut:
     cut = cnc_dxf.DxfBoundary(param)

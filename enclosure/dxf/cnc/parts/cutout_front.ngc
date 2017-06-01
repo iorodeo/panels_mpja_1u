@@ -13,20 +13,21 @@ F 45.0
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265754445816
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87489166358
 ; centerY: 2.12999684441
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -50,6 +51,11 @@ G1 X7.01564611 Y2.12999684
 G3 X7.01564611 Y2.12999684 I-0.14075445 J0.00000000
 G1 X6.87489166 Y2.12999684
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01564611 Y2.12999684
 G1 X7.01564611 Y2.12999684 Z-0.05000000
@@ -60,6 +66,11 @@ G1 X7.01564611 Y2.12999684
 G3 X7.01564611 Y2.12999684 I-0.14075445 J0.00000000
 G1 X6.87489166 Y2.12999684
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01564611 Y2.12999684
 G1 X7.01564611 Y2.12999684 Z-0.10000000
@@ -69,6 +80,11 @@ G3 X7.01564611 Y2.12999684 Z-0.15000000 I-0.14075445 J0.00000000
 G1 X7.01564611 Y2.12999684
 G3 X7.01564611 Y2.12999684 I-0.14075445 J0.00000000
 G1 X6.87489166 Y2.12999684
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01564611 Y2.12999684
@@ -90,20 +106,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265739101021
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87489832738
 ; centerY: 2.93001581713
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -127,6 +144,11 @@ G1 X7.01563743 Y2.93001582
 G3 X7.01563743 Y2.93001582 I-0.14073910 J0.00000000
 G1 X6.87489833 Y2.93001582
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01563743 Y2.93001582
 G1 X7.01563743 Y2.93001582 Z-0.05000000
@@ -137,6 +159,11 @@ G1 X7.01563743 Y2.93001582
 G3 X7.01563743 Y2.93001582 I-0.14073910 J0.00000000
 G1 X6.87489833 Y2.93001582
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01563743 Y2.93001582
 G1 X7.01563743 Y2.93001582 Z-0.10000000
@@ -146,6 +173,11 @@ G3 X7.01563743 Y2.93001582 Z-0.15000000 I-0.14073910 J0.00000000
 G1 X7.01563743 Y2.93001582
 G3 X7.01563743 Y2.93001582 I-0.14073910 J0.00000000
 G1 X6.87489833 Y2.93001582
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01563743 Y2.93001582
@@ -167,20 +199,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265759184349
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87488454411
 ; centerY: 3.72999731499
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -204,6 +237,11 @@ G1 X7.01564373 Y3.72999731
 G3 X7.01564373 Y3.72999731 I-0.14075918 J0.00000000
 G1 X6.87488454 Y3.72999731
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01564373 Y3.72999731
 G1 X7.01564373 Y3.72999731 Z-0.05000000
@@ -214,6 +252,11 @@ G1 X7.01564373 Y3.72999731
 G3 X7.01564373 Y3.72999731 I-0.14075918 J0.00000000
 G1 X6.87488454 Y3.72999731
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01564373 Y3.72999731
 G1 X7.01564373 Y3.72999731 Z-0.10000000
@@ -223,6 +266,11 @@ G3 X7.01564373 Y3.72999731 Z-0.15000000 I-0.14075918 J0.00000000
 G1 X7.01564373 Y3.72999731
 G3 X7.01564373 Y3.72999731 I-0.14075918 J0.00000000
 G1 X6.87488454 Y3.72999731
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01564373 Y3.72999731
@@ -244,20 +292,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265751930664
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87489249214
 ; centerY: 4.52999716936
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -281,6 +330,11 @@ G1 X7.01564442 Y4.52999717
 G3 X7.01564442 Y4.52999717 I-0.14075193 J0.00000000
 G1 X6.87489249 Y4.52999717
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01564442 Y4.52999717
 G1 X7.01564442 Y4.52999717 Z-0.05000000
@@ -291,6 +345,11 @@ G1 X7.01564442 Y4.52999717
 G3 X7.01564442 Y4.52999717 I-0.14075193 J0.00000000
 G1 X6.87489249 Y4.52999717
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01564442 Y4.52999717
 G1 X7.01564442 Y4.52999717 Z-0.10000000
@@ -300,6 +359,11 @@ G3 X7.01564442 Y4.52999717 Z-0.15000000 I-0.14075193 J0.00000000
 G1 X7.01564442 Y4.52999717
 G3 X7.01564442 Y4.52999717 I-0.14075193 J0.00000000
 G1 X6.87489249 Y4.52999717
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01564442 Y4.52999717
@@ -321,20 +385,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265748450441
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87487694826
 ; centerY: 5.3299995811
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -358,6 +423,11 @@ G1 X7.01562540 Y5.32999958
 G3 X7.01562540 Y5.32999958 I-0.14074845 J0.00000000
 G1 X6.87487695 Y5.32999958
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01562540 Y5.32999958
 G1 X7.01562540 Y5.32999958 Z-0.05000000
@@ -368,6 +438,11 @@ G1 X7.01562540 Y5.32999958
 G3 X7.01562540 Y5.32999958 I-0.14074845 J0.00000000
 G1 X6.87487695 Y5.32999958
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01562540 Y5.32999958
 G1 X7.01562540 Y5.32999958 Z-0.10000000
@@ -377,6 +452,11 @@ G3 X7.01562540 Y5.32999958 Z-0.15000000 I-0.14074845 J0.00000000
 G1 X7.01562540 Y5.32999958
 G3 X7.01562540 Y5.32999958 I-0.14074845 J0.00000000
 G1 X6.87487695 Y5.32999958
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01562540 Y5.32999958
@@ -398,20 +478,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265738117019
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87489998929
 ; centerY: 6.1299834009
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -435,6 +516,11 @@ G1 X7.01563811 Y6.12998340
 G3 X7.01563811 Y6.12998340 I-0.14073812 J0.00000000
 G1 X6.87489999 Y6.12998340
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01563811 Y6.12998340
 G1 X7.01563811 Y6.12998340 Z-0.05000000
@@ -445,6 +531,11 @@ G1 X7.01563811 Y6.12998340
 G3 X7.01563811 Y6.12998340 I-0.14073812 J0.00000000
 G1 X6.87489999 Y6.12998340
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01563811 Y6.12998340
 G1 X7.01563811 Y6.12998340 Z-0.10000000
@@ -454,6 +545,11 @@ G3 X7.01563811 Y6.12998340 Z-0.15000000 I-0.14073812 J0.00000000
 G1 X7.01563811 Y6.12998340
 G3 X7.01563811 Y6.12998340 I-0.14073812 J0.00000000
 G1 X6.87489999 Y6.12998340
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01563811 Y6.12998340
@@ -475,20 +571,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.26574345744
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87488312783
 ; centerY: 6.93
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -512,6 +609,11 @@ G1 X7.01562659 Y6.93000000
 G3 X7.01562659 Y6.93000000 I-0.14074346 J0.00000000
 G1 X6.87488313 Y6.93000000
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01562659 Y6.93000000
 G1 X7.01562659 Y6.93000000 Z-0.05000000
@@ -522,6 +624,11 @@ G1 X7.01562659 Y6.93000000
 G3 X7.01562659 Y6.93000000 I-0.14074346 J0.00000000
 G1 X6.87488313 Y6.93000000
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01562659 Y6.93000000
 G1 X7.01562659 Y6.93000000 Z-0.10000000
@@ -531,6 +638,11 @@ G3 X7.01562659 Y6.93000000 Z-0.15000000 I-0.14074346 J0.00000000
 G1 X7.01562659 Y6.93000000
 G3 X7.01562659 Y6.93000000 I-0.14074346 J0.00000000
 G1 X6.87488313 Y6.93000000
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01562659 Y6.93000000
@@ -552,20 +664,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265750416763
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87489243738
 ; centerY: 7.73000080547
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -589,6 +702,11 @@ G1 X7.01564285 Y7.73000081
 G3 X7.01564285 Y7.73000081 I-0.14075042 J0.00000000
 G1 X6.87489244 Y7.73000081
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01564285 Y7.73000081
 G1 X7.01564285 Y7.73000081 Z-0.05000000
@@ -599,6 +717,11 @@ G1 X7.01564285 Y7.73000081
 G3 X7.01564285 Y7.73000081 I-0.14075042 J0.00000000
 G1 X6.87489244 Y7.73000081
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01564285 Y7.73000081
 G1 X7.01564285 Y7.73000081 Z-0.10000000
@@ -608,6 +731,11 @@ G3 X7.01564285 Y7.73000081 Z-0.15000000 I-0.14075042 J0.00000000
 G1 X7.01564285 Y7.73000081
 G3 X7.01564285 Y7.73000081 I-0.14075042 J0.00000000
 G1 X6.87489244 Y7.73000081
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01564285 Y7.73000081
@@ -629,20 +757,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265753978674
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87489057757
 ; centerY: 8.53000399498
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -666,6 +795,11 @@ G1 X7.01564456 Y8.53000399
 G3 X7.01564456 Y8.53000399 I-0.14075398 J0.00000000
 G1 X6.87489058 Y8.53000399
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01564456 Y8.53000399
 G1 X7.01564456 Y8.53000399 Z-0.05000000
@@ -676,6 +810,11 @@ G1 X7.01564456 Y8.53000399
 G3 X7.01564456 Y8.53000399 I-0.14075398 J0.00000000
 G1 X6.87489058 Y8.53000399
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01564456 Y8.53000399
 G1 X7.01564456 Y8.53000399 Z-0.10000000
@@ -685,6 +824,11 @@ G3 X7.01564456 Y8.53000399 Z-0.15000000 I-0.14075398 J0.00000000
 G1 X7.01564456 Y8.53000399
 G3 X7.01564456 Y8.53000399 I-0.14075398 J0.00000000
 G1 X6.87489058 Y8.53000399
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01564456 Y8.53000399
@@ -706,20 +850,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.26575134844
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 6.87489240666
 ; centerY: 9.33000687726
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -743,6 +888,11 @@ G1 X7.01564376 Y9.33000688
 G3 X7.01564376 Y9.33000688 I-0.14075135 J0.00000000
 G1 X6.87489241 Y9.33000688
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X7.01564376 Y9.33000688
 G1 X7.01564376 Y9.33000688 Z-0.05000000
@@ -753,6 +903,11 @@ G1 X7.01564376 Y9.33000688
 G3 X7.01564376 Y9.33000688 I-0.14075135 J0.00000000
 G1 X6.87489241 Y9.33000688
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X7.01564376 Y9.33000688
 G1 X7.01564376 Y9.33000688 Z-0.10000000
@@ -762,6 +917,11 @@ G3 X7.01564376 Y9.33000688 Z-0.15000000 I-0.14075135 J0.00000000
 G1 X7.01564376 Y9.33000688
 G3 X7.01564376 Y9.33000688 I-0.14075135 J0.00000000
 G1 X6.87489241 Y9.33000688
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X7.01564376 Y9.33000688
@@ -783,20 +943,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265754445816
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748916636
 ; centerY: 2.12999684441
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -820,6 +981,11 @@ G1 X26.01564611 Y2.12999684
 G3 X26.01564611 Y2.12999684 I-0.14075445 J0.00000000
 G1 X25.87489166 Y2.12999684
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01564611 Y2.12999684
 G1 X26.01564611 Y2.12999684 Z-0.05000000
@@ -830,6 +996,11 @@ G1 X26.01564611 Y2.12999684
 G3 X26.01564611 Y2.12999684 I-0.14075445 J0.00000000
 G1 X25.87489166 Y2.12999684
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01564611 Y2.12999684
 G1 X26.01564611 Y2.12999684 Z-0.10000000
@@ -839,6 +1010,11 @@ G3 X26.01564611 Y2.12999684 Z-0.15000000 I-0.14075445 J0.00000000
 G1 X26.01564611 Y2.12999684
 G3 X26.01564611 Y2.12999684 I-0.14075445 J0.00000000
 G1 X25.87489166 Y2.12999684
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01564611 Y2.12999684
@@ -860,20 +1036,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265739101021
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748983274
 ; centerY: 2.93001581713
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -897,6 +1074,11 @@ G1 X26.01563743 Y2.93001582
 G3 X26.01563743 Y2.93001582 I-0.14073910 J0.00000000
 G1 X25.87489833 Y2.93001582
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01563743 Y2.93001582
 G1 X26.01563743 Y2.93001582 Z-0.05000000
@@ -907,6 +1089,11 @@ G1 X26.01563743 Y2.93001582
 G3 X26.01563743 Y2.93001582 I-0.14073910 J0.00000000
 G1 X25.87489833 Y2.93001582
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01563743 Y2.93001582
 G1 X26.01563743 Y2.93001582 Z-0.10000000
@@ -916,6 +1103,11 @@ G3 X26.01563743 Y2.93001582 Z-0.15000000 I-0.14073910 J0.00000000
 G1 X26.01563743 Y2.93001582
 G3 X26.01563743 Y2.93001582 I-0.14073910 J0.00000000
 G1 X25.87489833 Y2.93001582
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01563743 Y2.93001582
@@ -937,20 +1129,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265759184349
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748845441
 ; centerY: 3.72999731499
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -974,6 +1167,11 @@ G1 X26.01564373 Y3.72999731
 G3 X26.01564373 Y3.72999731 I-0.14075918 J0.00000000
 G1 X25.87488454 Y3.72999731
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01564373 Y3.72999731
 G1 X26.01564373 Y3.72999731 Z-0.05000000
@@ -984,6 +1182,11 @@ G1 X26.01564373 Y3.72999731
 G3 X26.01564373 Y3.72999731 I-0.14075918 J0.00000000
 G1 X25.87488454 Y3.72999731
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01564373 Y3.72999731
 G1 X26.01564373 Y3.72999731 Z-0.10000000
@@ -993,6 +1196,11 @@ G3 X26.01564373 Y3.72999731 Z-0.15000000 I-0.14075918 J0.00000000
 G1 X26.01564373 Y3.72999731
 G3 X26.01564373 Y3.72999731 I-0.14075918 J0.00000000
 G1 X25.87488454 Y3.72999731
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01564373 Y3.72999731
@@ -1014,20 +1222,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265751930664
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748924921
 ; centerY: 4.52999716936
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -1051,6 +1260,11 @@ G1 X26.01564442 Y4.52999717
 G3 X26.01564442 Y4.52999717 I-0.14075193 J0.00000000
 G1 X25.87489249 Y4.52999717
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01564442 Y4.52999717
 G1 X26.01564442 Y4.52999717 Z-0.05000000
@@ -1061,6 +1275,11 @@ G1 X26.01564442 Y4.52999717
 G3 X26.01564442 Y4.52999717 I-0.14075193 J0.00000000
 G1 X25.87489249 Y4.52999717
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01564442 Y4.52999717
 G1 X26.01564442 Y4.52999717 Z-0.10000000
@@ -1070,6 +1289,11 @@ G3 X26.01564442 Y4.52999717 Z-0.15000000 I-0.14075193 J0.00000000
 G1 X26.01564442 Y4.52999717
 G3 X26.01564442 Y4.52999717 I-0.14075193 J0.00000000
 G1 X25.87489249 Y4.52999717
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01564442 Y4.52999717
@@ -1091,20 +1315,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265748450441
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748769483
 ; centerY: 5.3299995811
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -1128,6 +1353,11 @@ G1 X26.01562540 Y5.32999958
 G3 X26.01562540 Y5.32999958 I-0.14074845 J0.00000000
 G1 X25.87487695 Y5.32999958
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01562540 Y5.32999958
 G1 X26.01562540 Y5.32999958 Z-0.05000000
@@ -1138,6 +1368,11 @@ G1 X26.01562540 Y5.32999958
 G3 X26.01562540 Y5.32999958 I-0.14074845 J0.00000000
 G1 X25.87487695 Y5.32999958
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01562540 Y5.32999958
 G1 X26.01562540 Y5.32999958 Z-0.10000000
@@ -1147,6 +1382,11 @@ G3 X26.01562540 Y5.32999958 Z-0.15000000 I-0.14074845 J0.00000000
 G1 X26.01562540 Y5.32999958
 G3 X26.01562540 Y5.32999958 I-0.14074845 J0.00000000
 G1 X25.87487695 Y5.32999958
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01562540 Y5.32999958
@@ -1168,20 +1408,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265738117019
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748999893
 ; centerY: 6.1299834009
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -1205,6 +1446,11 @@ G1 X26.01563811 Y6.12998340
 G3 X26.01563811 Y6.12998340 I-0.14073812 J0.00000000
 G1 X25.87489999 Y6.12998340
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01563811 Y6.12998340
 G1 X26.01563811 Y6.12998340 Z-0.05000000
@@ -1215,6 +1461,11 @@ G1 X26.01563811 Y6.12998340
 G3 X26.01563811 Y6.12998340 I-0.14073812 J0.00000000
 G1 X25.87489999 Y6.12998340
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01563811 Y6.12998340
 G1 X26.01563811 Y6.12998340 Z-0.10000000
@@ -1224,6 +1475,11 @@ G3 X26.01563811 Y6.12998340 Z-0.15000000 I-0.14073812 J0.00000000
 G1 X26.01563811 Y6.12998340
 G3 X26.01563811 Y6.12998340 I-0.14073812 J0.00000000
 G1 X25.87489999 Y6.12998340
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01563811 Y6.12998340
@@ -1245,20 +1501,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.26574345744
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748831278
 ; centerY: 6.93
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -1282,6 +1539,11 @@ G1 X26.01562659 Y6.93000000
 G3 X26.01562659 Y6.93000000 I-0.14074346 J0.00000000
 G1 X25.87488313 Y6.93000000
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01562659 Y6.93000000
 G1 X26.01562659 Y6.93000000 Z-0.05000000
@@ -1292,6 +1554,11 @@ G1 X26.01562659 Y6.93000000
 G3 X26.01562659 Y6.93000000 I-0.14074346 J0.00000000
 G1 X25.87488313 Y6.93000000
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01562659 Y6.93000000
 G1 X26.01562659 Y6.93000000 Z-0.10000000
@@ -1301,6 +1568,11 @@ G3 X26.01562659 Y6.93000000 Z-0.15000000 I-0.14074346 J0.00000000
 G1 X26.01562659 Y6.93000000
 G3 X26.01562659 Y6.93000000 I-0.14074346 J0.00000000
 G1 X25.87488313 Y6.93000000
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01562659 Y6.93000000
@@ -1322,20 +1594,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265750416763
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748924374
 ; centerY: 7.73000080547
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -1359,6 +1632,11 @@ G1 X26.01564285 Y7.73000081
 G3 X26.01564285 Y7.73000081 I-0.14075042 J0.00000000
 G1 X25.87489244 Y7.73000081
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01564285 Y7.73000081
 G1 X26.01564285 Y7.73000081 Z-0.05000000
@@ -1369,6 +1647,11 @@ G1 X26.01564285 Y7.73000081
 G3 X26.01564285 Y7.73000081 I-0.14075042 J0.00000000
 G1 X25.87489244 Y7.73000081
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01564285 Y7.73000081
 G1 X26.01564285 Y7.73000081 Z-0.10000000
@@ -1378,6 +1661,11 @@ G3 X26.01564285 Y7.73000081 Z-0.15000000 I-0.14075042 J0.00000000
 G1 X26.01564285 Y7.73000081
 G3 X26.01564285 Y7.73000081 I-0.14075042 J0.00000000
 G1 X25.87489244 Y7.73000081
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01564285 Y7.73000081
@@ -1399,20 +1687,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.265753978674
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748905776
 ; centerY: 8.53000399498
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -1436,6 +1725,11 @@ G1 X26.01564456 Y8.53000399
 G3 X26.01564456 Y8.53000399 I-0.14075398 J0.00000000
 G1 X25.87489058 Y8.53000399
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01564456 Y8.53000399
 G1 X26.01564456 Y8.53000399 Z-0.05000000
@@ -1446,6 +1740,11 @@ G1 X26.01564456 Y8.53000399
 G3 X26.01564456 Y8.53000399 I-0.14075398 J0.00000000
 G1 X25.87489058 Y8.53000399
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01564456 Y8.53000399
 G1 X26.01564456 Y8.53000399 Z-0.10000000
@@ -1455,6 +1754,11 @@ G3 X26.01564456 Y8.53000399 Z-0.15000000 I-0.14075398 J0.00000000
 G1 X26.01564456 Y8.53000399
 G3 X26.01564456 Y8.53000399 I-0.14075398 J0.00000000
 G1 X25.87489058 Y8.53000399
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01564456 Y8.53000399
@@ -1476,20 +1780,21 @@ G0 Z0.75000000
 ; Begin CircPocketXY
 ; ------------------------------------------------------------
 ; startZ: 0.0
-; layers: ['BNC Hole']
 ; cutterComp: inside
 ; startDwell: 1.0
 ; direction: ccw
 ; maxCutDepth: 0.05
 ; fileName: layout.dxf
-; safeZ: 0.75
-; depth: 0.2
 ; radius: 0.26575134844
+; layers: ['BNC Hole']
+; coolingPause: 2.0
+; depth: 0.2
+; overlap: 0.4
+; safeZ: 0.75
 ; dxfTypes: ['CIRCLE']
 ; centerX: 25.8748924067
 ; centerY: 9.33000687726
 ; toolDiam: 0.25
-; overlap: 0.4
 
 ; CircPocketXY: rapid move to safe z
 G0 Z0.75000000
@@ -1513,6 +1818,11 @@ G1 X26.01564376 Y9.33000688
 G3 X26.01564376 Y9.33000688 I-0.14075135 J0.00000000
 G1 X25.87489241 Y9.33000688
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; CircPocketXY: pass 2 lead-in
 G1 X26.01564376 Y9.33000688
 G1 X26.01564376 Y9.33000688 Z-0.05000000
@@ -1523,6 +1833,11 @@ G1 X26.01564376 Y9.33000688
 G3 X26.01564376 Y9.33000688 I-0.14075135 J0.00000000
 G1 X25.87489241 Y9.33000688
 
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; CircPocketXY: pass 3 lead-in
 G1 X26.01564376 Y9.33000688
 G1 X26.01564376 Y9.33000688 Z-0.10000000
@@ -1532,6 +1847,11 @@ G3 X26.01564376 Y9.33000688 Z-0.15000000 I-0.14075135 J0.00000000
 G1 X26.01564376 Y9.33000688
 G3 X26.01564376 Y9.33000688 I-0.14075135 J0.00000000
 G1 X25.87489241 Y9.33000688
+
+; CircPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; CircPocketXY: pass 4 lead-in
 G1 X26.01564376 Y9.33000688
@@ -1563,6 +1883,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -1604,6 +1925,11 @@ G1 X7.25751969 Y10.21000000
 G1 X7.25751969 Y10.21000000
 G1 X6.48248031 Y10.21000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X6.33248031 Y10.33500000 Z-0.05000000
 G1 X6.33248031 Y10.08500000 Z-0.05471684
@@ -1623,6 +1949,11 @@ G1 X7.25751969 Y10.21000000
 G1 X7.25751969 Y10.21000000
 G1 X6.48248031 Y10.21000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X6.33248031 Y10.33500000 Z-0.10000000
 G1 X6.33248031 Y10.08500000 Z-0.10471684
@@ -1641,6 +1972,11 @@ G1 X6.48248031 Y10.21000000
 G1 X7.25751969 Y10.21000000
 G1 X7.25751969 Y10.21000000
 G1 X6.48248031 Y10.21000000
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X6.33248031 Y10.33500000 Z-0.15000000
@@ -1681,6 +2017,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -1722,6 +2059,11 @@ G1 X26.25751969 Y10.21000000
 G1 X26.25751969 Y10.21000000
 G1 X25.48248032 Y10.21000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X25.33248032 Y10.33500000 Z-0.05000000
 G1 X25.33248032 Y10.08500000 Z-0.05471684
@@ -1741,6 +2083,11 @@ G1 X26.25751969 Y10.21000000
 G1 X26.25751969 Y10.21000000
 G1 X25.48248032 Y10.21000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X25.33248032 Y10.33500000 Z-0.10000000
 G1 X25.33248032 Y10.08500000 Z-0.10471684
@@ -1759,6 +2106,11 @@ G1 X25.48248032 Y10.21000000
 G1 X26.25751969 Y10.21000000
 G1 X26.25751969 Y10.21000000
 G1 X25.48248032 Y10.21000000
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X25.33248032 Y10.33500000 Z-0.15000000
@@ -1799,6 +2151,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -1840,6 +2193,11 @@ G1 X7.03334646 Y11.59212598
 G1 X7.03334646 Y11.70787402
 G1 X7.03334646 Y11.70787402
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X7.01366142 Y11.74724409 Z-0.05000000
 G1 X7.01366142 Y11.55275591 Z-0.07079125
@@ -1859,6 +2217,11 @@ G1 X7.03334646 Y11.59212598
 G1 X7.03334646 Y11.70787402
 G1 X7.03334646 Y11.70787402
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X7.01366142 Y11.74724409 Z-0.10000000
 G1 X7.01366142 Y11.55275591 Z-0.12079125
@@ -1877,6 +2240,11 @@ G1 X7.03334646 Y11.59212598
 G1 X7.03334646 Y11.59212598
 G1 X7.03334646 Y11.70787402
 G1 X7.03334646 Y11.70787402
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X7.01366142 Y11.74724409 Z-0.15000000
@@ -1917,6 +2285,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -1958,6 +2327,11 @@ G1 X6.96149606 Y12.30547244
 G1 X6.96149606 Y12.31452756
 G1 X6.96149606 Y12.31452756
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X6.82665354 Y12.46452756 Z-0.05000000
 G1 X6.82665354 Y12.15547244 Z-0.06335034
@@ -1977,6 +2351,11 @@ G1 X6.96149606 Y12.30547244
 G1 X6.96149606 Y12.31452756
 G1 X6.96149606 Y12.31452756
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X6.82665354 Y12.46452756 Z-0.10000000
 G1 X6.82665354 Y12.15547244 Z-0.11335034
@@ -1995,6 +2374,11 @@ G1 X6.96149606 Y12.30547244
 G1 X6.96149606 Y12.30547244
 G1 X6.96149606 Y12.31452756
 G1 X6.96149606 Y12.31452756
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X6.82665354 Y12.46452756 Z-0.15000000
@@ -2035,6 +2419,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -2081,6 +2466,11 @@ G1 X6.93196850 Y13.38047244
 G1 X6.93196850 Y13.83755906
 G1 X6.93196850 Y13.83755906
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X6.76759843 Y14.13755906 Z-0.05000000
 G1 X6.76759843 Y13.08047244 Z-0.06906960
@@ -2105,6 +2495,11 @@ G1 X6.93196850 Y13.38047244
 G1 X6.93196850 Y13.83755906
 G1 X6.93196850 Y13.83755906
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X6.76759843 Y14.13755906 Z-0.10000000
 G1 X6.76759843 Y13.08047244 Z-0.11906960
@@ -2128,6 +2523,11 @@ G1 X6.93196850 Y13.38047244
 G1 X6.93196850 Y13.38047244
 G1 X6.93196850 Y13.83755906
 G1 X6.93196850 Y13.83755906
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X6.76759843 Y14.13755906 Z-0.15000000
@@ -2173,6 +2573,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -2214,6 +2615,11 @@ G1 X26.03334646 Y11.59212598
 G1 X26.03334646 Y11.70787402
 G1 X26.03334646 Y11.70787402
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X26.01366142 Y11.74724409 Z-0.05000000
 G1 X26.01366142 Y11.55275591 Z-0.07079125
@@ -2233,6 +2639,11 @@ G1 X26.03334646 Y11.59212598
 G1 X26.03334646 Y11.70787402
 G1 X26.03334646 Y11.70787402
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X26.01366142 Y11.74724409 Z-0.10000000
 G1 X26.01366142 Y11.55275591 Z-0.12079125
@@ -2251,6 +2662,11 @@ G1 X26.03334646 Y11.59212598
 G1 X26.03334646 Y11.59212598
 G1 X26.03334646 Y11.70787402
 G1 X26.03334646 Y11.70787402
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X26.01366142 Y11.74724409 Z-0.15000000
@@ -2291,6 +2707,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -2332,6 +2749,11 @@ G1 X25.96149606 Y12.30547244
 G1 X25.96149606 Y12.31452756
 G1 X25.96149606 Y12.31452756
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X25.82665354 Y12.46452756 Z-0.05000000
 G1 X25.82665354 Y12.15547244 Z-0.06335034
@@ -2351,6 +2773,11 @@ G1 X25.96149606 Y12.30547244
 G1 X25.96149606 Y12.31452756
 G1 X25.96149606 Y12.31452756
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X25.82665354 Y12.46452756 Z-0.10000000
 G1 X25.82665354 Y12.15547244 Z-0.11335034
@@ -2369,6 +2796,11 @@ G1 X25.96149606 Y12.30547244
 G1 X25.96149606 Y12.30547244
 G1 X25.96149606 Y12.31452756
 G1 X25.96149606 Y12.31452756
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X25.82665354 Y12.46452756 Z-0.15000000
@@ -2409,6 +2841,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -2455,6 +2888,11 @@ G1 X25.93196850 Y13.38047244
 G1 X25.93196850 Y13.83755906
 G1 X25.93196850 Y13.83755906
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X25.76759843 Y14.13755906 Z-0.05000000
 G1 X25.76759843 Y13.08047244 Z-0.06906960
@@ -2479,6 +2917,11 @@ G1 X25.93196850 Y13.38047244
 G1 X25.93196850 Y13.83755906
 G1 X25.93196850 Y13.83755906
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X25.76759843 Y14.13755906 Z-0.10000000
 G1 X25.76759843 Y13.08047244 Z-0.11906960
@@ -2502,6 +2945,11 @@ G1 X25.93196850 Y13.38047244
 G1 X25.93196850 Y13.38047244
 G1 X25.93196850 Y13.83755906
 G1 X25.93196850 Y13.83755906
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X25.76759843 Y14.13755906 Z-0.15000000
@@ -2547,6 +2995,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -2588,6 +3037,11 @@ G1 X7.03334646 Y16.29007874
 G1 X7.03334646 Y16.84992126
 G1 X7.03334646 Y16.84992126
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X7.01366142 Y16.88929134 Z-0.05000000
 G1 X7.01366142 Y16.25070866 Z-0.07354820
@@ -2607,6 +3061,11 @@ G1 X7.03334646 Y16.29007874
 G1 X7.03334646 Y16.84992126
 G1 X7.03334646 Y16.84992126
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X7.01366142 Y16.88929134 Z-0.10000000
 G1 X7.01366142 Y16.25070866 Z-0.12354820
@@ -2625,6 +3084,11 @@ G1 X7.03334646 Y16.29007874
 G1 X7.03334646 Y16.29007874
 G1 X7.03334646 Y16.84992126
 G1 X7.03334646 Y16.84992126
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X7.01366142 Y16.88929134 Z-0.15000000
@@ -2665,6 +3129,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -2706,6 +3171,11 @@ G1 X6.90444882 Y17.45000000
 G1 X6.90444882 Y17.45000000
 G1 X6.83555118 Y17.45000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X6.72334646 Y17.50610236 Z-0.05000000
 G1 X6.72334646 Y17.39389764 Z-0.05691748
@@ -2725,6 +3195,11 @@ G1 X6.90444882 Y17.45000000
 G1 X6.90444882 Y17.45000000
 G1 X6.83555118 Y17.45000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X6.72334646 Y17.50610236 Z-0.10000000
 G1 X6.72334646 Y17.39389764 Z-0.10691748
@@ -2743,6 +3218,11 @@ G1 X6.83555118 Y17.45000000
 G1 X6.90444882 Y17.45000000
 G1 X6.90444882 Y17.45000000
 G1 X6.83555118 Y17.45000000
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X6.72334646 Y17.50610236 Z-0.15000000
@@ -2783,6 +3263,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -2824,6 +3305,11 @@ G1 X26.03334646 Y16.29007874
 G1 X26.03334646 Y16.84992126
 G1 X26.03334646 Y16.84992126
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X26.01366142 Y16.88929134 Z-0.05000000
 G1 X26.01366142 Y16.25070866 Z-0.07354820
@@ -2843,6 +3329,11 @@ G1 X26.03334646 Y16.29007874
 G1 X26.03334646 Y16.84992126
 G1 X26.03334646 Y16.84992126
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X26.01366142 Y16.88929134 Z-0.10000000
 G1 X26.01366142 Y16.25070866 Z-0.12354820
@@ -2861,6 +3352,11 @@ G1 X26.03334646 Y16.29007874
 G1 X26.03334646 Y16.29007874
 G1 X26.03334646 Y16.84992126
 G1 X26.03334646 Y16.84992126
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X26.01366142 Y16.88929134 Z-0.15000000
@@ -2901,6 +3397,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -2942,6 +3439,11 @@ G1 X25.90444882 Y17.45000000
 G1 X25.90444882 Y17.45000000
 G1 X25.83555118 Y17.45000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X25.72334646 Y17.50610236 Z-0.05000000
 G1 X25.72334646 Y17.39389764 Z-0.05691748
@@ -2961,6 +3463,11 @@ G1 X25.90444882 Y17.45000000
 G1 X25.90444882 Y17.45000000
 G1 X25.83555118 Y17.45000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X25.72334646 Y17.50610236 Z-0.10000000
 G1 X25.72334646 Y17.39389764 Z-0.10691748
@@ -2979,6 +3486,11 @@ G1 X25.83555118 Y17.45000000
 G1 X25.90444882 Y17.45000000
 G1 X25.90444882 Y17.45000000
 G1 X25.83555118 Y17.45000000
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X25.72334646 Y17.50610236 Z-0.15000000
@@ -3019,6 +3531,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -3060,6 +3573,11 @@ G1 X7.05063000 Y10.85000000
 G1 X7.05063000 Y10.85000000
 G1 X7.01606000 Y10.85000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X7.01366000 Y10.85120000 Z-0.05000000
 G1 X7.01366000 Y10.84880000 Z-0.05143644
@@ -3079,6 +3597,11 @@ G1 X7.05063000 Y10.85000000
 G1 X7.05063000 Y10.85000000
 G1 X7.01606000 Y10.85000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X7.01366000 Y10.85120000 Z-0.10000000
 G1 X7.01366000 Y10.84880000 Z-0.10143644
@@ -3097,6 +3620,11 @@ G1 X7.01606000 Y10.85000000
 G1 X7.05063000 Y10.85000000
 G1 X7.05063000 Y10.85000000
 G1 X7.01606000 Y10.85000000
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X7.01366000 Y10.85120000 Z-0.15000000
@@ -3137,6 +3665,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -3178,6 +3707,11 @@ G1 X26.05060000 Y10.85000000
 G1 X26.05060000 Y10.85000000
 G1 X26.01610000 Y10.85000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X26.01370000 Y10.85120000 Z-0.05000000
 G1 X26.01370000 Y10.84880000 Z-0.05143885
@@ -3197,6 +3731,11 @@ G1 X26.05060000 Y10.85000000
 G1 X26.05060000 Y10.85000000
 G1 X26.01610000 Y10.85000000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X26.01370000 Y10.85120000 Z-0.10000000
 G1 X26.01370000 Y10.84880000 Z-0.10143885
@@ -3215,6 +3754,11 @@ G1 X26.01610000 Y10.85000000
 G1 X26.05060000 Y10.85000000
 G1 X26.05060000 Y10.85000000
 G1 X26.01610000 Y10.85000000
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X26.01370000 Y10.85120000 Z-0.15000000
@@ -3255,6 +3799,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -3296,6 +3841,11 @@ G1 X7.11500000 Y14.91500000
 G1 X7.11500000 Y15.82500000
 G1 X7.11500000 Y15.82500000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X7.10500000 Y15.84500000 Z-0.05000000
 G1 X7.10500000 Y14.89500000 Z-0.07448454
@@ -3315,6 +3865,11 @@ G1 X7.11500000 Y14.91500000
 G1 X7.11500000 Y15.82500000
 G1 X7.11500000 Y15.82500000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X7.10500000 Y15.84500000 Z-0.10000000
 G1 X7.10500000 Y14.89500000 Z-0.12448454
@@ -3333,6 +3888,11 @@ G1 X7.11500000 Y14.91500000
 G1 X7.11500000 Y14.91500000
 G1 X7.11500000 Y15.82500000
 G1 X7.11500000 Y15.82500000
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X7.10500000 Y15.84500000 Z-0.15000000
@@ -3373,6 +3933,7 @@ G0 Z0.75000000
 ; ptEquivTol: 1e-05
 ; fileName: layout.dxf
 ; layers: ['Cutout']
+; coolingPause: 2.0
 ; depth: 0.2
 ; overlap: 0.4
 ; cornerCut: False
@@ -3414,6 +3975,11 @@ G1 X26.11500000 Y14.91500000
 G1 X26.11500000 Y15.82500000
 G1 X26.11500000 Y15.82500000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.05000000
+
 ; RectPocketXY: pass 2 lead-in
 G1 X26.10500000 Y15.84500000 Z-0.05000000
 G1 X26.10500000 Y14.89500000 Z-0.07448454
@@ -3433,6 +3999,11 @@ G1 X26.11500000 Y14.91500000
 G1 X26.11500000 Y15.82500000
 G1 X26.11500000 Y15.82500000
 
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.10000000
+
 ; RectPocketXY: pass 3 lead-in
 G1 X26.10500000 Y15.84500000 Z-0.10000000
 G1 X26.10500000 Y14.89500000 Z-0.12448454
@@ -3451,6 +4022,11 @@ G1 X26.11500000 Y14.91500000
 G1 X26.11500000 Y14.91500000
 G1 X26.11500000 Y15.82500000
 G1 X26.11500000 Y15.82500000
+
+; RectPocketXY: rapid move to safe z
+G0 Z0.75000000
+G4 P2.0
+G1 Z-0.15000000
 
 ; RectPocketXY: pass 4 lead-in
 G1 X26.10500000 Y15.84500000 Z-0.15000000
