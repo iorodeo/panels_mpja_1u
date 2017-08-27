@@ -33,8 +33,8 @@ else:
 
 startZ = 0.0
 safeZ = 0.75
-maxCutDepth = 0.05
-#maxCutDepth = 0.03
+#maxCutDepth = 0.05
+maxCutDepth = 0.03
 direction = 'ccw'
 cutterComp = 'inside'
 overlap = 0.4

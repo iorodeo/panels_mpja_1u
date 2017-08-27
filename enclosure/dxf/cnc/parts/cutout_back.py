@@ -41,8 +41,8 @@ else:
 
 startZ = 0.0
 safeZ = 0.75
-maxCutDepth = 0.05
-#maxCutDepth = 0.03
+#maxCutDepth = 0.05
+maxCutDepth = 0.02
 direction = 'ccw'
 cutterComp = 'inside'
 overlap = 0.4
@@ -58,6 +58,7 @@ prog.add(gcode_cmd.FeedRate(feedrate))
 param = {
         'fileName'     : fileName,
         'layers'       : ['DC Jack Hole','prepockets'], 
+        #'layers'       : ['prepockets'], 
         'depth'        : depth,
         'startZ'       : startZ,
         'safeZ'        : safeZ,
