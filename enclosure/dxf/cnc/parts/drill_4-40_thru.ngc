@@ -8,7 +8,7 @@ G90 (Set absolute distance mode)
 G20 (Set units to inches)
 G61 (Exact path mode)
 
-F 24.0
+F 10.0
 
 ; Begin PeckDrill
 ; ------------------------------------------------------------
@@ -22,7 +22,7 @@ F 24.0
 ; dxfTypes: ['CIRCLE']
 ; centerX: 9.97751238149
 ; centerY: 1.59700787402
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -35,7 +35,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X9.97751238149 Y1.59700787402 Z-0.25 R0.01 Q0.03
+G83 X9.97751238149 Y1.59700787402 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -56,7 +56,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 13.9145323947
 ; centerY: 1.59699964691
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -69,7 +69,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X13.9145323947 Y1.59699964691 Z-0.25 R0.01 Q0.03
+G83 X13.9145323947 Y1.59699964691 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -90,7 +90,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 9.97751518287
 ; centerY: 8.19200476273
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -103,7 +103,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X9.97751518287 Y8.19200476273 Z-0.25 R0.01 Q0.03
+G83 X9.97751518287 Y8.19200476273 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -124,7 +124,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 13.9045106517
 ; centerY: 8.1920060767
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -137,7 +137,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X13.9045106517 Y8.1920060767 Z-0.25 R0.01 Q0.03
+G83 X13.9045106517 Y8.1920060767 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -158,7 +158,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 11.0025266131
 ; centerY: 9.81998958225
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -171,7 +171,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X11.0025266131 Y9.81998958225 Z-0.25 R0.01 Q0.03
+G83 X11.0025266131 Y9.81998958225 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -192,7 +192,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 9.75241856083
 ; centerY: 10.0199969525
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -205,7 +205,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X9.75241856083 Y10.0199969525 Z-0.25 R0.01 Q0.03
+G83 X9.75241856083 Y10.0199969525 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -226,7 +226,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 9.75244021926
 ; centerY: 15.62
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -239,7 +239,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X9.75244021926 Y15.62 Z-0.25 R0.01 Q0.03
+G83 X9.75244021926 Y15.62 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -260,7 +260,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 11.0025107635
 ; centerY: 16.2199966048
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -273,7 +273,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X11.0025107635 Y16.2199966048 Z-0.25 R0.01 Q0.03
+G83 X11.0025107635 Y16.2199966048 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -294,7 +294,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 28.9775123815
 ; centerY: 1.59700787402
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -307,7 +307,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X28.9775123815 Y1.59700787402 Z-0.25 R0.01 Q0.03
+G83 X28.9775123815 Y1.59700787402 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -328,7 +328,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 32.9145323947
 ; centerY: 1.59699964691
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -341,7 +341,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X32.9145323947 Y1.59699964691 Z-0.25 R0.01 Q0.03
+G83 X32.9145323947 Y1.59699964691 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -362,7 +362,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 28.9775151829
 ; centerY: 8.19200476273
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -375,7 +375,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X28.9775151829 Y8.19200476273 Z-0.25 R0.01 Q0.03
+G83 X28.9775151829 Y8.19200476273 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -396,7 +396,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 32.9045106517
 ; centerY: 8.1920060767
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -409,7 +409,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X32.9045106517 Y8.1920060767 Z-0.25 R0.01 Q0.03
+G83 X32.9045106517 Y8.1920060767 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -430,7 +430,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 30.0025266131
 ; centerY: 9.81998958225
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -443,7 +443,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X30.0025266131 Y9.81998958225 Z-0.25 R0.01 Q0.03
+G83 X30.0025266131 Y9.81998958225 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -464,7 +464,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 28.7524185608
 ; centerY: 10.0199969525
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -477,7 +477,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X28.7524185608 Y10.0199969525 Z-0.25 R0.01 Q0.03
+G83 X28.7524185608 Y10.0199969525 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -498,7 +498,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 28.7524402193
 ; centerY: 15.62
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -511,7 +511,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X28.7524402193 Y15.62 Z-0.25 R0.01 Q0.03
+G83 X28.7524402193 Y15.62 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -532,7 +532,7 @@ G0 Z0.75000000
 ; dxfTypes: ['CIRCLE']
 ; centerX: 30.0025107635
 ; centerY: 16.2199966048
-; stepZ: 0.03
+; stepZ: 0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000
@@ -545,7 +545,7 @@ G4 P0.5
 
 ; PeckDrill: move to start z
 G1 Z0.01000000
-G83 X30.0025107635 Y16.2199966048 Z-0.25 R0.01 Q0.03
+G83 X30.0025107635 Y16.2199966048 Z-0.25 R0.01 Q0.015
 
 ; PeckDrill: rapid move to safe z
 G0 Z0.75000000

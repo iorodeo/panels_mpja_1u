@@ -17,7 +17,7 @@ Notes
 
 testCut = False 
 
-feedrate = 24.0
+feedrate = 10.0
 fileName = 'layout.dxf'
 #fileName = 'layout_single_0.dxf'
 startZ = 0.01
@@ -26,7 +26,7 @@ if testCut:
 else:
     stopZ = -0.25
 safeZ = 0.75
-stepZ = 0.03
+stepZ = 0.015
 startDwell = 0.5
 
 prog = gcode_cmd.GCodeProg()

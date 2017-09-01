@@ -26,7 +26,7 @@ if testCut:
 else:
     stopZ = -0.25
 safeZ = 0.75
-stepZ = 0.03
+stepZ = 0.015
 startDwell = 0.5
 
 prog = gcode_cmd.GCodeProg()
